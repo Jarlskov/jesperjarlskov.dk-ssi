@@ -1,0 +1,8 @@
+---
+title: 'Open Source Software Links'
+date: 2009-11-03
+---
+
+Der findes efterhånden rigtig mange <a href="http://linkkataloger.dk/">linkkataloger</a> ude på det store internet. Nogle er <a href="http://www.dmoz.org/">enorme, og med sider fra hele verden</a> mens andre er <a href="http://www.jagtlinks.com/">mere specialiserede</a>.
+Disse kataloger kan give en masse forskellige fordele. Ejere af hjemmesider i linkkatalogerne får mere opmærksomhed. På de rigtig store linkkataloger er chancen for at en side bliver opdaget i mængden selvfølgelig meget lille, så her vil det meste af opmærksomheden sandsynligvis komme fra <a href="http://google.com">Google</a><a> og de </a><a href="http://www.bing.com/">andre søgemaskiner</a>, hvilket kan hjælpe den enkelte side højere op i resultaterne. Men de mindre, og mere specialiserede linkkataloger vil selvfølgelig oftere blive brugt af folk der er interesserede i katalogets niché, og dette kan skaffe mere relevant trafik til den enkelte side.
+Men for at disse kataloger skal kunne drive relevant trafik, kræver det selvfølgelig at folk kender til dem. Derfor vil jeg gerne gøre opmærksom på Danske Open Source Software Links. Et linkkatalog for danske sider, med fokus på open source software. Så hvis du har en dansk side eller blog med fokus på open source software generelt, eller måske bare på et enkelt projekt, så skynd dig ind og tilmeld dig kataloget, og husk at spred ordet så folk ved hvor de får deres informationer om Open Source Software, på dansk.

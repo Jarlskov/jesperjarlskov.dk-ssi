@@ -1,0 +1,8 @@
+---
+title: 'Web Analytics Wednesday testes i København'
+date: 2009-10-05
+---
+
+Bare 14 dage efter seneste <a href="http://jesperjarlskov.dk/web-analytics-wednesday-k%C3%B8benhavn/">Web Analytics Wednesday i København</a> er det allerede tid igen. Denne gang får eventet fornemt besøg af web analytics guru, og forfatter af bogen <a href="http://www.amazon.co.uk/gp/product/0974358428?ie=UTF8&amp;tag=jespejarls-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=0974358428">Web analytics demystified</a>, Eric T. Peterson. 
+Analyse af et websted kan give mange interessante oplysninger om de besøgende og hvad disse synes er godt og skidt ved en given hjemmeside, men der er jo ikke meget idé i at samle alle disse data hvis man ikke handler på dem. Det kan dog være svært at prøve at gætte sig frem til hvordan man forbedrer et site, så der må ofte mere konkrete metoder i brug. Derfor vil Eric T. Peterson sammen med Aureli Pols fortælle om hvordan man tester sit website, så man kan få et datagrundlag for hvilke ændringer de besøgende reagerer positivt på.
+Arrangementet foregår på onsdag, d. 7. Oktober, i Østerport Kursuscenter lige ved Østerport station. Dørene åbnes kl 17:30. og selve arrangementet starter kl. 18:10. Det hele er gratis, og bindende tilmelding foregår <a href="http://www.iihnordic.dk/kurser-og-workshops/kursusliste/waw-med-eric-peterson">på kursuslisten</a>.

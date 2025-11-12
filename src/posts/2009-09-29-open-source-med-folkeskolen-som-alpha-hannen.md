@@ -1,0 +1,12 @@
+---
+title: 'Open Source, med folkeskolen som alpha hannen'
+date: 2009-09-29
+---
+
+Mange ved det og siger det højt, mange ved det men vil ikke indrømme det, og mange har bare ikke opdaget det endnu. Der findes bedre ting end at betale 700 kr for 
+let og hurtigt at oprette flotte dokumenter, regneark og præsentationer
+især når præcis det samme arbejde <a href="http://www.openoffice.org/">kan</a> klares <a href="http://docs.google.com/">gratis</a>.
+Hvis nogen stadig er i tvivl, snakker jeg selvfølgelig om office pakker.
+De 700 kr er selvfølgelig kun nok hvis du kun har én computer, hvis du f.eks. har en virksomhed med mange ansatte, eller ligefrem en offentlig institution med både ansatte og andre folk tilknyttet, som f.eks. en folkeskole, der allesammen har behov for at kunne bruge en office pakke, kan det løbe op i nogle enorme licensbeløb. Folkeskolen er normalt et område man ofte hører om i nyhederne, fordi de allesammen mangler penge konstant, og man hører konstant om nedskæringer. Derfor synes jeg det er positivt når kommuner vælger at skære et sted hvor det nærmest ikke vil kunne mærkes.
+Jeg så det første gang i 2007 da <a href="http://www.version2.dk/artikel/6450-toender-vaelger-openoffice-til-1500-pcer">Tønder valgte Open Office til 1500 pc'er</a>. I starten af 2009 skrev jeg så om hvordan <a href="http://jesperjarlskov.dk/it-og-telestyrelsen-gar-open-source/">IT &amp; Telestyrelsen anbefaler Open Source</a>. I April i år var det så Gribskov Kommune der havde <a href="http://www.computerworld.dk/art/51087/it-chef-hoej-nyttevaerdi-af-omlaegning-til-openoffice">høj nytteværdi af omlægning til OpenOffice</a>, og det seneste jeg har hørt er at <a href="http://www.version2.dk/artikel/12299-lyngby-taarbaek-skifter-til-openoffice-vil-undgaa-ulovlig-download">Lyngby-Taarbæk skifter til OpenOffice</a>, denne gang også med det budskab at de ikke vil opfordre eleverne og deres familier til at downloade de dyre office pakker gratis, fordi de føler sig presset til at bruge samme produkt som de bruger i skolerne.
+Jeg synes generelt at det er en positiv tendens, og jeg håber på at se mange flere kommuner følge den positive trend. Det kunne også være rart at se flere offentlige institutioner tage springet, man kan jo håbe på at de positive erfaringer fra folkeskolerne kan gøre andre institutioner modigere.

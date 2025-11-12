@@ -1,0 +1,31 @@
+---
+title: 'IT og Telestyrelsen går Open Source'
+date: 2009-01-29
+---
+
+Jeg ved ikke om det bare er mig der er langsom, men jeg har ihvertfald først nu lagt mærke til et pænt udvalg af <abbr title="Free &amp; Open Source Software">FOSS</abbr> på deres borgerportal <a href="http://www.it-borger.dk/">It-borger.dk</a>.
+For det første fortæller den forklarende side <a href="http://www.it-borger.dk/om-it-borger">Om IT-borger.dk</a> at:
+<blockquote>
+It-borger.dk afvikles på CMS-systemet Plone. Plone er udelukkende baseret på open source-software.
+</blockquote>
+Hvilket jeg i selv sig finder yderst positivt!
+Desuden findes der på sitet en række guides til hvordan man bruger sin computer, samt nogle guides til at bruge forskelligt software. På denne liste findes en lang række interessante FOSS eksempler.
+Bl.a. findes en Ubuntu Installationsguide der udover at hjælpe med selve installationen, også giver en grundlæggende introduktion til Ubuntu for linux brugere hvor de bl.a. kommer ind på fordele og ulemper ved et skifte.
+Derudover findes der små guides til at klare forskellige opgaver i Open Office, såsom:
+<ul>
+<li>En <a href="http://www.it-borger.dk/forbrug/dig-og-din-pc/office-pakker-2">Introduktion til Open Office</a></li>
+<li>Open Office Calc til andet end regnskab, og</li>
+<li>Præsentationer i Open Office Impress</li>
+</ul>
+Desuden findes der en introduktion til Thunderbird &amp; Lightning som Outlook-alternativ, samt en række andre ting.
+Jeg synes det er rigtig positivt at se offentlige myndigheder på den måde gå ind og blåstemple de gratis og åbne alternativer, og se dem være med til at vise den almene dansker at der faktisk findes reelle alternativer. Desuden synes jeg at det er positivt at se styrelsen selv være med fremme, og rent faktisk basere deres site på en open source platform. For at det ikke skal være løgn viser HTTP-headeren endda at it-borger ligger på en <a href="http://www.freebsd.org/">FreeBSD</a> server.
+
+#1 Server Response: http://it-borger.dk
+HTTP Status Code: HTTP/1.1 200 OK
+Date: Thu, 29 Jan 2009 16:27:15 GMT
+Server: Zope/(Zope 2.9.4-final, python 2.4.3, freebsd6) ZServer/1.1 Plone/2.5
+</blockquote>
+
+Jeg ser helt sikkert det offentliges (dog kun delvise) brug af Open Source software som et skridt i den rigtige retning, og jeg håber selvsagt at se meget mere af den slags i fremtiden!
+
+Som en lille personlig sejr vil jeg lige understrege at IT-borger's Ubuntuguide linker til <a href="http://www.ubuntudanmark.dk/forum">Ubuntu Danmarks Forum</a> som et sted hvor man kan få hjælp og support til Ubuntu :-)

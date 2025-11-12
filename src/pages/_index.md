@@ -1,7 +1,5 @@
 ---
-title: Welcome to My Blog!
+title: JesperJarlskov.dk
 ---
 
-This is a **custom introduction** for the main blog page. Here, I can write a longer welcome message, explain the purpose of the blog, and add any other content I want to appear above the list of posts.
-
-This content is fully editable and supports Markdown, so you can include links, lists, and other formatting.
+JesperJarlskov.dk is my personal blog covering Tech, Management and whatever I find interesting at the time.

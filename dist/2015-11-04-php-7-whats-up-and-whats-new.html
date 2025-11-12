@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                                            <title>PHP 7 - What&#039;s up, and what&#039;s new? | My Awesome Blog</title>
+    <meta name="description" content="">
+    <meta name="author" content="Author Name">
+    <link rel="canonical" href="http://localhost:8000/2015-11-04-php-7-whats-up-and-whats-new.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:8000/2015-11-04-php-7-whats-up-and-whats-new.html">
+    <meta property="og:title" content="PHP 7 - What&#039;s up, and what&#039;s new?">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://localhost:8000/assets/images/default-social.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="http://localhost:8000/2015-11-04-php-7-whats-up-and-whats-new.html">
+    <meta name="twitter:title" content="PHP 7 - What&#039;s up, and what&#039;s new?">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="http://localhost:8000/assets/images/default-social.jpg">
+
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <header><nav><a href="/">Home</a><a href="/about.html">About</a><a href="/tags.html">Tags</a></nav></header><main><article><h1>PHP 7 - What&#039;s up, and what&#039;s new?</h1><p><small>Published on 2015-11-04 by Author Name</small></p><div><p><strong>Update nov. 9</strong> - Looks like the PHP 7 release date has been postponed due to some outstanding bugs and regressions. It should still be <a href="http://news.php.net/php.internals/89100">right around the corner</a>, though.</p><h2>PHP 7 overview</h2>
+The next major version of PHP, PHP 7, should be right around the corner, with a planned release date on November 12th, according to the current <a href="https://wiki.php.net/todo/php70#timetable">release timetable</a>. PHP 7 will include of a lot of performance improvements, and a range of new features. In thi of post I'll try to go through the major new stuff.
+<h3>But, what about PHP 6?</h3>
+You probably know that the current version is PHP 5.6, and if the next version is PHP 7, obviously PHP 6 was skipped. I won't go into details with this choice since I'd rather just forget about it.
+<p>But in short, first politics happened, then bullshit happened, and then finally they <a href="https://wiki.php.net/rfc/php6">had a vote</a> and moved on.</p><h2>Cleanup</h2>
+Since PHP 7 is a major version release, backwards compatibility breaks are allowed. BC breaks are never nice, so the dev team is trying to keep them at a minimum, but some BC breaks should be expected. 
+<h3>Deprecation of PHP 4 style constructors</h3>
+PHP 4 introduced object oriented programming to PHP. Back in those days an object constructor was a method named like the class you wanted to create an object from.
+<pre>
+class MyObject {
+  protected $param;
+
+  // Object constructor.
+  function MyObject($param) {
+    $this->param = $param;
+  }
+}
+</pre><p>In PHP 5 the class name constructor was replaced with the new magic method __construct() as the recommended way to create objects.</p><pre>
+class MyObject {
+  protected $param;
+
+  // Object constructor.
+  function __construct($param) {
+    $this->param = $param;
+  }
+}
+</pre><p>PHP 4 style constructors is still available in PHP 5, unless you're using namespaces, in which case they are ignored and only the PHP 5 style constructors are available. This inconsistency can cause some confusion, and this is the main reason that the PHP 4 style constructors will be marked as deprecated in PHP 7 and removed in the following PHP 8. This means that in PHP 7 a class with a PHP 4 style constructor, but no PHP 5 style constructor will cause PHP to emit an E_DEPRECATED error.</p><h3>Removal of SAPIs and extensions</h3>
+PHP 7 also removes <a href="https://wiki.php.net/rfc/removal_of_dead_sapis_and_exts">a bunch of SAPIs</a> (Server APIs - PHP interfaces for module developers to extend the webserver) and extensions. I'll skip on the SAPIs as I doubt that change will affect me.
+<p>Two modules have been removed. The <a href="http://php.net/manual/en/function.ereg.php">ext/ereg</a> regex module which has been deprecated since PHP 5.3, and the <a href="http://php.net/manual/en/ref.mysql.php">ext/mysql</a> extension, which has been deprecated since PHP 5.5. If you are using the ereg functionality, it is recommended that you switch to using <a href="http://php.net/manual/en/book.pcre.php">pcre</a>, and if you are still using the mysql functions, you should switch over to using either <a href="http://php.net/manual/en/book.mysqli.php">MySQLi</a> or <a href="http://php.net/manual/en/book.pdo.php">PDO</a>, more info for choosing which of the two to use can be found in <a href="http://php.net/manual/en/mysqlinfo.api.choosing.php">the manual</a>.</p><h3>Removal of other functionality</h3>
+Besides the removed SAPIs and extensions, a bunch of other functionality will be removed, most notably probably being some mcrypt, iconv and mbstring functionality. For a full list, refer to the <a href="https://wiki.php.net/rfc/remove_deprecated_functionality_in_php7">rfc</a>.
+<h2>PHP 7 Performance</h2>
+Internally the Zend Engine has been completely refactored and rebuilt, a project known as <a href="https://wiki.php.net/phpng">PHPNG (next generation)</a>. This rewrite allows for a lot of improvements, most of which go way over my head (I'm a web developer, not a language developer), but you can find a lot of details on <a href="https://wiki.php.net/phpng-int">the wiki</a>.
+<p>Some of the notable improvements includes <a href="https://nikic.github.io/2014/12/22/PHPs-new-hashtable-implementation.html">improved hash tables</a> and improvements to the internal representation of values and objects, which Nikita Popov has written some interesting articles about: &lt;a href=https://nikic.github.io/2015/05/05/Internal-value-representation-in-PHP-7-part-1.html&quot;&gt;part 1</a> and <a href="https://nikic.github.io/2015/06/19/Internal-value-representation-in-PHP-7-part-2.html">part 2</a>.</p><p>For PHP developers, the most notable improvements will probably be the drastically improved performance, that <a href="http://talks.php.net/oz15#/6">Rasmus Lerdorf has been talking about</a>.</p><h2>Engine Exceptions</h2>
+Until now when something went really wrong in a PHP script, it would cause either an error, or an exception. An error was an internal PHP things that would either kill the script, or at least output an error message, either to the user, but hopefully just to a log file, depending on your setup. An exception was a part of the script, it would stop the execution and bubble up through the call stack until it hit something designed to catch it, or kill the script if nothing would catch it.
+<p>An exception would change the script's execution flow, but could be mitigated in a properly designed application, while errors were a bit harder to handle on runtime.
+In PHP 7 the Exception hierarchy has been extended, and the error types that would previously stop the entire script execution, will be catchable, so the developer is able to handle the errors more gracefully.
+To keep backwards compatibility all exceptions still extend the Exception class, while the errors will extend a new Error class. To ensure both errors and exceptions can be handled together they will both implement a new Throwable interface, making it possible to make catch-all solutions.
+You can learn more about the new engine exceptions in <a href="https://wiki.php.net/rfc/engine_exceptions_for_php7">this rfc</a>, and about the new Throwable interface in <a href="https://wiki.php.net/rfc/throwable-interface">this rfc</a>.</p><h2>Scalar type hints</h2>
+PHP 5 introduced type hinting, the notion of allowing methods to expect it's parameters to be of a certain type, and throw a recoverable fatal error if the input didn't match the type hint. This was possible for objects and arrays.
+In PHP 7 it is also possible to <a href="https://wiki.php.net/rfc/scalar_type_hints_v5">type hint scalar types</a>, ie. integers, floats, booleans and strings. If an input parameter doesn't match the hinted type, the default behaviour will be to convert the value to the type hinted type, but it's possible to turn on strict mode, in this case a TypeError Exception will be thrown if an input parameter has the wrong value. Strict mode will have to be set for each file where it should be activated.
+I'm really looking forward to this change, and will probably be writing a lot of strict files. I'll probably get more into this in a later post.
+<h2>Return type hints</h2>
+Another new thing that I think will be really awesome is return type hints. In the same way that methods can define which parameter types it expects as input, it will also be able to make a promise of which data type it will return. <a href="https://wiki.php.net/rfc/return_types">Declared return types</a> will be included in PHP 7, but an rfc extending the concept by adding <a href="https://wiki.php.net/rfc/void_return_type">void return types</a> is currently being voted on.
+Another cool extensions would be <a href="https://wiki.php.net/rfc/nullable_types">nullable types</a>, the rfc is currently only a draft, but I'm hoping to see this for PHP 7.1.
+Return types is another thing I'm really looking forward to, and will probably write more about later.
+<h2>Null coalesce</h2><a href="https://wiki.php.net/rfc/isset_ternary">Null coalesce</a> is a variant of the ternary operators, aka shorthand ifs. The new ternary operator <code>??</code> will also check if a value is null.
+Example:
+<pre>
+$category = $_GET['category'] ?? 'cakes';
+</pre>
+In human terms this means, $category should get the value of $_GET['category'] if it is set, otherwise, it should be 'cakes'.
+This could, of course, also be done using the existing ternary operator
+<pre>
+$category = isset($_GET['category']) ? $_GET['category'] : 'cakes';
+</pre>
+This is not a revolutionary addition, but rather some nice syntactic sugar.
+<h2>Anonymous classes</h2>
+PHP 5.3 introduced anonymous functions, which is unnamed functions defined during runtime. In PHP 7 the concept is expanded with <a href="https://wiki.php.net/rfc/anonymous_classes">anonymous classes</a>. I believe their main purpose is for single use objects where stdClass might not be enough, but I'll have to work with it for real before I'll figure out their real purpose.
+<h2>Group use</h2>
+PHP 5.3 also introduced namespaces, logical separation of classes into groups.
+To use classes from other namespaces you can either use their fully qualified name:
+<pre>
+namespace Foo;
+<p>class Bar
+{
+protected $baz;</p><p>public function __construct()
+{
+$this-&gt;baz = new \Xyz\Baz();
+}
+}
+</pre>
+or <code>use</code> the required class from it's namespace</p><pre>
+namespace Foo;
+
+use Xyz\Baz;
+
+class Bar
+{
+  protected $baz;
+
+  public function __construct()
+  {
+    $this->baz = new Baz();
+  }
+}
+</pre><p>PHP 7 introduces <a href="https://wiki.php.net/rfc/group_use_declarations">grouped use declarations</a>, so it's possible to include multiple classes from a namespace in a single use statement. This is done by stuffing the class names in curly braces. It's still possible to name individual includes</p><pre>
+use Name\Space\{Foo as Xyz, Bar}
+</pre><p>I'll let you decide whether this is nice syntactical sugar, or another way to build an unreadable mess, since I havn't fully decided yet.</p><h2>Uniform variable syntax</h2>
+The <a href="https://wiki.php.net/rfc/uniform_variable_syntax">uniform variable syntax</a> tries to make variable syntax more consistent. I don't have a full overview over all of the changes yet, but the RFC contains a lot of examples. This is a pretty important change to be aware of, since it might actually change the behaviour of, or just break, some of your running code since it changes how a lot of expressions are evaluated.
+<h2>CSPRNG</h2>
+PHP has always had functionality to generate <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">pseudo-random data</a>, the standard functionality just havn't been <a href="https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator">cryptographically secure</a> (aka. random enough). PHP 7 introduces some new functionality for creating data that is <a href="https://wiki.php.net/rfc/easy_userland_csprng">even more random</a>.
+<h2>Further reading about PHP 7</h2>
+In this post I've introduced a bunch of the major changes in PHP 7 that I believe will be the most impactful to m daily life as a developer. There is a lot of more stuff being added and removed, and a full list is available <a href="https://github.com/tpunt/PHP7-Reference">here</a>.
+<p>Do you have any change that you look forward to more than the rest of PHP 7? Or do you see anything coming up in one of the following versions that makes everything even cooler? Leave your answer in a comment.</p></div></article><footer></footer><nav class="post-navigation"><div class="previous"><a href="/2015-10-27-code-reviews.html">&laquo; Previous: Code reviews</a></div><div class="next"><a href="/2015-11-21-levemand-om-mad-ol-og-andre-gode-ting-i-livet.html">Next: Levemand - om mad, øl og andre gode ting i livet &raquo;</a></div></nav></main><footer><p>&copy; 2025 Author Name</p></footer><script type="module">
+                    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+                    mermaid.initialize({ startOnLoad: true });
+                </script>    </body>
+</html>

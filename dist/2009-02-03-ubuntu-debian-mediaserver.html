@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                                            <title>Ubuntu/Debian medieserver med Playstation 3 support | My Awesome Blog</title>
+    <meta name="description" content="">
+    <meta name="author" content="Author Name">
+    <link rel="canonical" href="http://localhost:8000/2009-02-03-ubuntu-debian-mediaserver.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:8000/2009-02-03-ubuntu-debian-mediaserver.html">
+    <meta property="og:title" content="Ubuntu/Debian medieserver med Playstation 3 support">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://localhost:8000/assets/images/default-social.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="http://localhost:8000/2009-02-03-ubuntu-debian-mediaserver.html">
+    <meta name="twitter:title" content="Ubuntu/Debian medieserver med Playstation 3 support">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="http://localhost:8000/assets/images/default-social.jpg">
+
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <header><nav><a href="/">Home</a><a href="/about.html">About</a><a href="/tags.html">Tags</a></nav></header><main><article><h1>Ubuntu/Debian medieserver med Playstation 3 support</h1><p><small>Published on 2009-02-03 by Author Name</small></p><div><p>I denne artikel vil jeg fortælle lidt om hvordan man opsætter sin <a href="http://jesperjarlskov.dk/2009/asus-eee-box-som-debian-server/">Ubuntu eller Debian server</a> som medieserver, dvs. en maskine der indeholder Video/lyd-filer, og deler dem på netværket. Her mener jeg selvfølgelig ikke piratkopiering, men jeg mener at dele medierne med andre enheder i hjemmet.
+Min egen grund til at opsætte en medieserver var for at dele musik og film med min playstation 3, så de kan blive afspillet via. fjernsynet, da jeg pt. ikke har nogle ordentlige højtalere tilknyttet min computer.</p><h2>UPnP</h2>
+Playstation 3 understøtter den protokol der hedder <abbr title="Universal Plug and Play">UPnP</abbr>. Det er en protokol der bl.a. bygget på <abbr title="HyperText Transfer Protocol">HTTP</abbr> og <abbr title="Transmission Control Protocol">TCP</abbr>/<abbr title="Internet Protocol">IP</abbr>, der gør det muligt for et antal enheder at arbejde sammen uden at man skal rode med drivere, opsætning af forbindelse osv.
+<h2>Mediatomb</h2>
+For at få Playstationen til at arbejde sammen med medieserveren er det altså bare nødvendigt at finde noget mediecentersoftware der understøtter UPnP. En anden begrænsning er at det skal køre på den server jeg har opsat uden <abbr title="Graphical User Interface">GUI</abbr>.
+Til dette formål har jeg fundet programmet <a href="http://mediatomb.cc/">MediaTomb</a>, dette findes i repositories, så det er let:
+<blockquote>
+aptitude install mediatomb
+</blockquote>
+Efter installationen startes programmet med kommandoen:
+<blockquote>
+mediatomb
+</blockquote>
+Hvis du tidligere har installeret <a href="http://jesperjarlskov.dk/2009/screen-irssi/">Screen på din Ubuntu/Debian server</a> kan du åbne et screenvindue og starte mediatomb i dette. Det giver mulighed for at lade medieserveren køre selvom du logger af, og vende tilbage til den på et senere tidspunkt.
+<p>Selve administrationen sker igennem et webinterface på en port som MediaTomb selv indstiller. Du bliver informeret om den adresse du skal connecte til når du starter MediaTomb. Denne adresse tastes altså bare ind i en webbrowser, og du vil straks have adgang til administratorinterfacet på din medieserver. Så mangler du bare at ligge medier på serveren :-)</p></div></article><footer></footer><nav class="post-navigation"><div class="previous"><a href="/2009-02-02-screen-irssi.html">&laquo; Previous: Screen + Irssi</a></div><div class="next"><a href="/2009-02-24-retssagen-mod-the-pirate-bay.html">Next: Retssagen mod the Pirate Bay &raquo;</a></div></nav></main><footer><p>&copy; 2025 Author Name</p></footer><script type="module">
+                    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+                    mermaid.initialize({ startOnLoad: true });
+                </script>    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                                            <title>Netværkssikkerhed - Definitioner og basics | My Awesome Blog</title>
+    <meta name="description" content="">
+    <meta name="author" content="Author Name">
+    <link rel="canonical" href="http://localhost:8000/2011-03-14-netvaerkssikkerhed-definitioner-og-basics.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:8000/2011-03-14-netvaerkssikkerhed-definitioner-og-basics.html">
+    <meta property="og:title" content="Netværkssikkerhed - Definitioner og basics">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://localhost:8000/assets/images/default-social.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="http://localhost:8000/2011-03-14-netvaerkssikkerhed-definitioner-og-basics.html">
+    <meta name="twitter:title" content="Netværkssikkerhed - Definitioner og basics">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="http://localhost:8000/assets/images/default-social.jpg">
+
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <header><nav><a href="/">Home</a><a href="/about.html">About</a><a href="/tags.html">Tags</a></nav></header><main><article><h1>Netværkssikkerhed - Definitioner og basics</h1><p><small>Published on 2011-03-14 by Author Name</small></p><div><p>Jeg deltager i øjeblikket i et kursus kaldet Operating Systems for Network Security. Jeg tænkte at jeg løbende ville dele en del af mine noter her på bloggen, det kunne jo være andre kunne finde noget inspiration i dem.</p><h2>Definitioner</h2>
+Først ligger vi ud med nogle definitioner. Der er her tale om de grundlæggende elementer vi har at arbejde med når et netværks skal beskyttes.
+<h3>Border Routers</h3>
+Formålet med en router er at fordele trafikken på et netværk, og sørge for at alle pakker kommer det rigtige sted hed. En border router er den sidste router der adskiller dit netværk, fra et netværk du ikke stoler på, f.eks. internettet.
+<h3>Firewalls</h3>
+Mens routeren sørger for at sende alt trafik i retning af rette modtager, sørger en firewall for at filtrere datapakkerne, så kun de ønskede data for lov at komme ind i, eller ud fra, et netværk.
+<h3>Intrusion Detection systems (IDSs)</h3>
+Et Intrusion Detection System (IDS) fungerer som en tyverialarm, der giver besked hvis der opdages forsøg på utilsigtet indtrængen. Der findes to slags IDS, Network-based (NIDS) der er tilknyttet en firewall og overvåger trafikken på netværket, samt Host-based (HIDS) der er tilknyttet den enkelte maskine, og overvåger trafikken til maskinen.
+<h3>Intrusion Prevention systems (IPSs)</h3>
+Mens et IDS vil forsøge at opdage forsøg på indtrængen og advare en administrator, vil et IPS selv forsøge at bremse forsøg på indtrængen.
+<h3>Virtual Private Networks (VPNs)</h3>
+Et VPN er en krypteret forbindelse over en usikker kanal såsom internettet. Dette kan f.eks. være nyttigt hvis man har brugere der skal have adgang til interne data såsom mailservere, fra eksterne placeringer, f.eks hjemmefra. Et VPN vil dog kun beskytte selve forbindelse, hvis en klient derfor er kompromiteret, kan det være muligt at trænge ind i et privat netværk via en VPN-forbindelse opsat af den kompromiterede klient.
+<h3>Software Architecture</h3>
+Softwaresikkerhed er også en vigtig ting at tage højde for. Hvis en webshop f.eks benytter sig af e-commerce software med sikkerhedshuller i, kan det være muligt for ondsindede folk at få adgang til interne data ved at udnytte disse huller, da der her ofte vil være tale om en forbindelse mellem intern software, og en database, vil det normalt kunne foregå uden hverken IDS eller IPS opdager det.
+<h3>De-Militarized Zones (DMZs) and Screened Subnets</h3>
+En De-Militarized Zone (DMZ) er et område på et netværk der ikke er beskyttet af en firewall. Det vil altså ofte være området fra en border router, til en firewall.
+Et Screened subnet er en del af netværket bag en firewall, som stadig kan tilgåes fra internettet. Screened subnets kan f.eks bruges til at adskille web- og mailservers, der skal kunne tilgås fra internettet via bestemte protokoller, fra brugernes arbejdsmaskiner der skal kunne tilgå internettet, men som ikke skal kunne tilgås udefra.
+<h2>Defense in Depth</h2>
+En god sikkerhedsmodel fungerer som et løg. Det består af flere uafhængige lag, der til sammen gerne skulle beskytte de systemer du prøver at beskytte. Det er vigtigt at have styr på alle sine beskyttelseslag, da ingenting, som bekendt, er perfekt. Skulle det lykkedes uvedkommende at slippe igennem det yderste lag vil det derfor være rart at næste lag kan tage sig af problemet. Vi arbejder her med 3 komponenter.
+<ul><li>The Perimeter</li><li>The Network</li><li>The Human factor</li></ul>
+Disse 3 vil blive gennemgået hver for sig.
+<h3>The Perimeter</h3>
+Når man snakker om netværkssikkerhed tænker folk oftest på perimeteren. Dette er det yderste lag af netværket der adskiller dit netværk fra det store stygge internet. Når vi snakker sikkerhed i dette lag snakker vi altså ting som:
+<ul><li>Static Packet filters</li><li>Stateful firewalls</li><li>Proxy firewalls</li><li>IDS & IPS</li><li>VPN devices</li></ul><h3>The Network</h3>
+Her tales der selvfølgelig om dit interne netværk. Det vil sige både servere, klienter, og netværkshardware. Netværkslaget kan altså med fordel deles op i to mindre dele, netværkshardwaren, og de systemer du prøver at beskytte.
+<h3>Netværket</h3>
+På selve netværket kan sikkerheden bestå af ting som:
+<ul><li>Ingress & Egress filtre</li><li>Interne firewalls til at opdele netværket i mindre dele</li><li>IDS-systemer til at holde øje med om nogen skulle have held til at bryde igennem perimetren</li></ul><h3>Interne systemer</h3>
+På de interne systemer kan sikkerheden bestå af ting som
+<ul><li>Personlige (host-centric) firewalls</li><li>Antivirus software</li><li>Patching af sikkerhedshuller i OS og andet software</li><li>Forvaltning af opsætning - procedurer til at sørge for at både software og antivirus definitioner er opdateret</li><li>Revision</li></ul>
+En stor del af denne sikkerhed kan altså delvist automatiseres, såsom udrulning af softwareopdateringer, andet kræver dog en del manuelt arbejde, såsom den løbende revision af sikkerhedsprocedurer.
+<h3>The Human factor</h3>
+En stor fejl der ofte begås når IT-sikkerhed planlægges er at man glemmer den menneskelige faktor, og kun tænker på hardware- og softwaresikkerhed. Det er dog vigtigt at alle brugere sættes ind i organisationens sikkerhedspolitik, og ved hvad der forventes af den enkelte, og ikke mindst hvorfor. Hvis en medarbejder f.eks har sin maskine med hjem, og ved et uheld får installeret en ord der spreder sig til hele organisationens interne netværk via en VPN-forbindelse, vil alverdens firewalls ikke kunne redde dig. Det er derfor vigtigt med en nogle klare sikkerhedsprocedurer, hvor der tages højde for ting som:
+<ul><li>Authority - Hvem har adsvaret for hvad, mht. en given procedure</li><li>Scope - Hvem skal kende den enkelte procedure</li><li>Expiration - Hvornår vil en given procedure blive forældet?</li><li>Specificity - Hvad forventes der af en enkelte?</li><li>Clarity - Kan alle involverede parter rent faktisk forstå proceduren?</li></ul><h2>Opsummering</h2>
+Der er altså rigtig mange ting man skal tage højde for når man arbejder med sikkerhedspolitiken i en organisation. Der er både tale om hardware-, software- samt menneskelige overvejelser man skal tage højde for på flere niveauer.
+Jeg vil forhåbentlig komme med flere indlæg løbende, som jeg kommer igennem bog og forelæsninger.
+</div></article><footer></footer><nav class="post-navigation"><div class="previous"><a href="/2011-02-10-dag-13-a-new-beginning.html">&laquo; Previous: Dag 13 - A new beginning</a></div><div class="next"><a href="/2011-04-20-paskeferien-dag-0-afrejsen.html">Next: Påskeferien dag 0 - afrejsen &raquo;</a></div></nav></main><footer><p>&copy; 2025 Author Name</p></footer><script type="module">
+                    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+                    mermaid.initialize({ startOnLoad: true });
+                </script>    </body>
+</html>

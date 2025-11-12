@@ -1,0 +1,54 @@
+---
+title: 'Drupal - opbygning og termer'
+date: 2013-02-07
+---
+
+<p>Drupal er et stort og komplekst system. Der er mange ting man skal sætte sig ind i for at forstå, og kunne arbejde med det. Dette indlæg vil være en oversigt over en del af Drupals terminologi, og en række vigtige koncepter vil blive opsummeret. Dette er mere en huskeliste, end en introduktion, så forvent ikke at det lærer dig alt om Drupal, men hvis du er i gang med at lære Drupal kan det forhåbentlig hjælpe til at forstå nogle af koncepterne bedre.</p>
+<p>
+For at gøre det hele lidt sjovere har nogle af termerne flere forskellige betydninger i Drupal, så det gælder om at holde tunge lige i munden.
+</p>
+
+<dl>
+<dt>Entity</dt>
+<dd><ul><li>Drupals fundamentale klasse til indholdstyper.</li></ul></dd>
+<dt>Node</dt>
+<dd>
+<ul>
+<li>Basistypen for det meste indhold i Drupal.</li>
+<li>Et indholdselement, f.eks. et blogindlæg.</li>
+</ul>
+</dd>
+<dt>Content type</dt>
+<dd><ul><li>En definition af en type indhold, f.eks. billede, eller blogindlæg. Nedarver fra Node.</li></ul></dd>
+<dt>Page</dt>
+<dd>
+<ul>
+<li>En content type til statisk indhold</li>
+<li>En display type. En page kan definere hvordan indholdet på en side skal struktureres.</li>
+</ul>
+</dd>
+<dt>Block</dt>
+<dd><ul><li>Et mindre, selvstændigt element på en page. En block kan f.eks indeholde en statisk tekst såsom en copyright disclaimer, eller funktionalitet i form at et søgefelt eller en loginformular.</li></ul>
+</dd>
+<dt>View</dt>
+<dd><ul><li>Et view definerer et dataudtræk fra en database. Views kan inkluderes på andre sider og f.eks vise nyeste indlæg eller lignende.</li></ul></dd>
+<dt>Field</dt>
+<dd><ul><li>Et field er et datafelt tilknyttet en contenttype. Det kan f.eks. være et tekst-felt til nodens brødtekst, eller et datofelt der fortæller hvornår en node er offentliggjort.</ul></li></dd>
+<dt>Template</dt>
+<dd><ul><li>En template er en skabelonsfil. Det er en PHP-fil der beskriver hvordan sider skal opbygges. Templates kan både være meget generelle, såsom node.tpl.php, men kan overskrives af mere specifikke templates, såsom node-type.tpl.php.</li><ul></dd>
+<dt>Region</dt>
+<dd><ul><li>En region er en underdel af en template.</li></ul></dd>
+<dt>Theme</dt>
+<dd><ul><li>Et theme beskriver et websites udseende. Det består af en række templatefiler, css-filer og PHP-filer hvor Drupals theme_ funktioner overskrives.</li></ul></dd>
+<dt>Taxonomy</dt>
+<dd><ul><li>Taxonomies bruger til at styre kategoriseringen af indhold på et website</li></ul></dd>
+<dt>Vocabulary</dt>
+<dd><ul><li>Et vocabulary, eller et ordforråd, er en kategori af de tags der bruges til at kategorisere indhold på et website.</li></ul></dd>
+<dt>Term</dt>
+<dd><ul><li>En term er selve det tag der bruges til at kategorisere indhold på et website. Tags er hierarkiske, dvs. de kan have andre termer som parents og childrens.</li></ul></dd>
+</dl>
+<p>
+Forskellige content typer kan få tildelt ordforråd. Hvis du f.eks. driver en webshop der sælger tøj, kan man lave et ordforråd der hedder farver. Der kan så laves en content type der hedder "trøjer", der linkes til ordforrådet "farver". En trøje node, vil så kunne tagges med farver fra ordforrådet, alt efter hvilke farve trøjen findes i. Hvis trøjer også er linket til et ordforråd kalder "størrelser" vil man f.eks. hurtigt og enkelt kunne søge efter ting som "røde trøjer i størrelse XL".
+</p>
+<p>
+Jeg er stadig ny til Drupal, så dette er de beskrivelser jeg er kommet frem til indtil videre. De fleste burde være nogenlunde på rette spor, men jeg kan ikke garantere validiteten af alle ovenstående beskrivelser. Hvis du har indspark eller rettelser hører jeg meget gerne om det, så jeg, og andre der evt. læser med, kan blive lidt klogere.</p>

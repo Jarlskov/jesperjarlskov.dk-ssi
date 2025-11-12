@@ -1,0 +1,97 @@
+---
+title: 'Wrapping up Laracon EU 2016'
+date: 2016-08-29
+---
+
+Last week I spend some days in Amsterdam attending Laracon EU 2016. It was two very interesting days, and I think the general level of the talks was very high compared to other conferences I've attended. The location and the catering was also really good, and I was impressed with how smooth it all seemed to go, at least for us as participants. Good job!
+
+Here I've tried to gather up some of my notes from the talks I saw. It's mainly meant to serve as my personal notes, but I also try to give some recommendations as to which talks are worth watching when the videos are released.
+
+The event can be found at <a href="https://joind.in/event/laracon-eu-2016">joind.in</a>. The videos havn't been released yet, but you can find the <a href="https://streamacon.com/video/laracon-us">Laracon US videos</a>.
+
+<h2>Taylor Otwell - Keynote / Laravel 5.3</h2>
+Taylor continued his Laracon US keynote, and highlighted some of the other new features Laravel 5.3 will bring.
+
+The emphasis on his talk was on:
+<ul>
+<li><b>Echo</b> - Which makes it easy to provide real-time push notifications to online users of your app, for example straight to the website, or through notifications on your phone. One major advantage in this update is the easy of setting up private notification channels.</li>
+<li><b>Notifications</b> - An easier interface for pushing user notifications to various service like Slack and email. The interface makes it easy to create integrations to new services.</li>
+</ul>
+
+<h2>Hannes van de Vreken - IoC Container Beyond Constructor Injection</h2>
+Hannes did an interesting talk on IoC containers. The first part of the talk was a general introduction to dependency injection and IoC containers and the purpose of both concepts. Afterwards he dove into some more advances subjects like contextually binding interfaces to implementations and container events which can be used to lazy load services or changing the settings of a service before injection.
+
+He also talked about lazy loading services by using method injection and using closures for lazy loading services, not only when the requiring service is instantiated, but all the way to the point where the injected service is actually being used, like it's done in Illuminate\Events\Dispatcher::setQueueResolver().
+
+The talk definitely gave me some takeaways I want to look more into.
+
+<h2>Mitchell van Wijngaarden - The past is the future</h2>
+Mitchell did a talk on event sourcing, a topic I had only recently heard about for the first time. It was an interesting talk with a lot of bad jokes and puns to keep you awake (or whatever the purpose was) which gave a nice introduction to the subject, how it could be utilized and some of the pros of using it.
+
+I think event sourcing is a pretty interesting concept, and I'd like to see it used in a larger project to see how it holds up. To me it sounds like overkill in many situations, but I've definitely done projects where knowing about it would have helped simplify both the architecture and the logic a great deal.
+
+An interesting talk for developers working with transaction-based domains or who just wants some new inspiration.
+
+<h2>Lily Dart - No excuses user research</h2>
+Lily talked about the importance of user research and the importance of knowing what your users actually want, instead of just guessing. It would have been nice with some actual examples of projects where it had been used, how and the results of the research, but I'm already pretty convinced that data as proof is better than anyones best guess so this talk only served to make this belief stronger.
+
+She provided some easy ways to start collection data about your customers wants and behaviour that I think could be interesting to look into:
+<ul>
+<li><b>Bug reports</b> - Bug reports contain a wealth of knowledge about what your users are struggling with. Often we as developers can have a tendency to push aside reports, big or small, as simply being because the user didn't understand how something works, but this is often caused by usability issues in the system they're using. Lily suggested started tagging all bug reports, to provide an overview of which parts of your system that maybe should be easier to understand.</li>
+<li><b>Transactional audits</b> - Transactional audits are the small feedback forms we sometimes meet after completing a transaction. Many help systems, for instance, include a small form at the bottom of each help section asking the simple question "Did this page answer your question?", where if we answer no, we're asked what was missing, or what we were actually looking for.</li>
+<li><b>Search logs</b> - If your website has a search engine, logging all searches can also provide some interesting knowledge, both about what your users actually want to know more about, but also about what they are struggling to find out more about. This can give you an idea about things like features that are hard for the user to understand, or issues in your site architecture that makes it hard to find certain information in your website, or maybe even tell you more about what subjects people would like your website to expand more about.</li>
+</ul>
+
+A really interesting talk I'd recommend to anyone working with websites (developers, marketing, managers etc).
+
+<h2>Evan You - Modern frontend development with vue.js</h2>
+Evan gave an introduction to the vuejs framework, where it came from and some of the architecture decisions it's based on. It was a very theoretical talk that provided some good background knowledge, but I had hoped for a more hands-on approach, and some more code, but I believe he did that at <a href="https://streamacon.com/video/laracon-us/evan-you-vuejs-workshop">his Laracon US talk</a> so I should probably watch that as well. Even so the talk still provided some good insights that I'm sure will help me when I'll start looking into using Vue, which will hopefully happen soon.
+
+It was an interesting talk if you'd like some background for Vue and it's structure, but if you just want to learn how to get started using it, there's probably better talks out there, like the ones from <a href="https://streamacon.com/video/laracon-us/evan-you-vuejs-workshop">Laracon US</a>.
+
+<h2>Matthias Noback - Please understand me</h2>
+Matthias gave a talk to remind us all that working as a developer isn't only about developing software. On the personal side it's important to work in a place where you feel appreciated and respected, and that you have access to the tools you need to do your work.
+
+On the other hand you also need to do your part to make the job meaningful. Try to figure out who the customers are, and what they think about and want. Knowing who you're doing the job for, and why they need it, will help you understand what actually needs to be done, and will help you make better decisions about your product. In the same way it's useful to get to know your manager, that will make communication easier when the deadlines draw closer.
+
+If you really want to be taken serious you also need to take yourself and your job serious. Take responsibility for your job. Show up, set deadlines and meet them, and deliver high quality work. Take your colleagues, managers and customers seriously, don't be a 'developer on a throne'.
+
+There was nothing particularly new in the talk, but I believe it serves as a good reminder of some things that many either ignore or take for granted. A good talk to watch for any developer or people managing developers.
+
+<h2>Abed Halawi - The lucid architecture for buiding scalable applications</h2>
+Abed talked about what he described as lucid architecture and the general thoughts about the problem him and his team were building. He described an architecture as a an expression of a view point that is used to communicate structure and should hopefully help eradicate homeless code by providing every piece of code with one obvious unquestionable place to reside.
+
+The requirements for Abed's team's architecture was that it should kill legacy code, define terminology, be comprehensive without limitations, complement their framework's design and perform at scale.
+
+The lucid architecture consists of 3 parts
+<ul>
+<li><b>Features</b> - Each feature fulfills one business requirement. Features are grouped into domains, and a feature works by running a range of jobs in order. CreateArticleFeature could be a feature name.</li>
+<li><b>Jobs</b> - Each job handles one step required to fulfill a feature ie. validation. SaveArticleJob could be a job name. Each job can be used by several different features.</li>
+<li><b>Service</b> - A service is a collection of features. Features are net reused between services. The website service and the API service would each have their own CreateArticleFeature. Jobs can be reused, though.
+</ul>
+
+In lucid architecture controllers are VERY slim, each controller serves one feature, and does nothing else, everything from validation to domain object creation/updating and response preparation are handled by different jobs launched by the feature.
+
+I found the idea pretty interesting, especially since it removes some of the overlap of different concepts by providing a specific use case for each domain level. I also like how all logic is handled in specific and clearly separated jobs making it easy to move jobs to queues if necessary. It looks a bit like the direction that we're currently taking our code base at my job, though we're not quite so radical in our approach.
+
+An interesting talk to watch if you want some new inspiration regarding architecture.
+
+<h2>Gabriela D'Avila</h2>
+Gabriela talked about some of the changes coming to MySQL in version 5.7. A lot of the talk went a bit over my head since I'm not a database specialist, but it was interesting and gave some good pointers for things to look more into.
+
+MySQL 5.7 enables the <a href="https://dev.mysql.com/doc/refman/5.5/en/sql-mode.html#sqlmode_no_zero_date">NO_ZERO_DATE</a> option by default, which might have implications for our application since we actually use zero dates.
+
+MySQL has a concept of virtual columns, that can calculate values based on the value of other columns, like concatenating a first_name and a last_name column into a full_name. Iirc it can also get attribute values from the new JSON type columns, which would be pretty cool.
+
+<h2>Jeroen V.D. Gulik - How to effectively grow a development team</h2>
+Jeroen gave a talk about developer culture in teams, and how he had built his developer team at Schiphol airport. He talked a lot about what culture is, what developer culture is and how to foster a positive culture, and how that culture is related to developer happiness. He had a lot of good points, too many to note here, and I'd recommend anyone interested in company culture to watch this talk, it's relevant to anyone from developers through developer managers to higher level managers in technology focused companies.
+
+<h2>Adam Wathan - Curing the common loop</h2>
+The last talk I saw was Adam Wathan's talk about using loops when programming, versus using higher order functions, which is functions that takes other functions as parameters and/or returns functions. The base of the talk was the 3 things Adam claims to hate:
+<ul>
+<li>Loops</li>
+<li>Conditionals</li>
+<li>Temporary variables</li>
+</ul>
+
+I can see the point about the code getting a lot more readable and I like how the approach requires a radically different thought process compared to how I'd normally do things, I'd definitely recommend any developer to watch this talk.

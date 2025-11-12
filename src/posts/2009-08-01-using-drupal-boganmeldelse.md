@@ -1,0 +1,27 @@
+---
+title: 'Using Drupal - Boganmeldelse'
+date: 2009-08-01
+---
+
+[caption id="attachment_238" align="alignright" width="228" caption="Using Drupal cover forside"]<img src="http://jesperjarlskov.dk/wp-content/uploads/2009/08/using_drupal_comp.png" alt="Using Drupal cover forside" width="228" height="300" class="size-medium wp-image-238" />[/caption]
+Da jeg er i gang med at lave det nye website for <a href="http://ubuntudanmark.dk/">Ubuntu Danmark</a> er jeg ved at sætte mig ordentlig ind i hvordan det populære <abbr title="Content Management System">CMS</abbr> <a href="http://drupal.org">Drupal</a> fungerer, jeg har derfor ledt efter noget godt materiale til at komme i gang, og det synes jeg helt sikkert jeg har fået.
+Det jeg fandt var bogen Using Drupal, udgivet af teknologivirksomheden <a href="http://oreilly.com/">O'Reilly</a>.
+Bogen starter med 2 kapitler der giver en introduktion til hvad Drupal er, hvorfor man bør bruge det, samt hvordan man kommer i gang med det. Det er en meget god introduktion, så man ved hvad det er man har at arbejde med. Men det er først i de efterfølgende kapitler at det bliver rigtig interessant.
+I hvert af de efterfølgende 8 kapitler bliver der taget udgangspunkt i en use case, hvor der skal bruges et website til et bestemt formål, og der gennemgås så hvordan man kan bygge det pågældende website vha. Drupal og de tilhørende moduler. De 8 use cases omfatter:
+<ul>
+<li>Job Posting Board - Med jobopslag og ansøgninger til opslagene.</li>
+<li>Product Reviews - Inkl. produktafstemninger og samarbejde med Amazon vha. Amazons API.</li>
+<li>Wiki - Med fokus på brugergenereret indhold og "pæne" URLer.</li>
+<li>Managing Publishing Workflow - Med fokus på sider med et større antal skribenter, samt moderatorer der skal godkende indhold osv.</li>
+<li>Photo Gallery - Á la Flickr</li>
+<li>Multilingual Sites - Hvor der arbejdes med at lave både site og alt indhold flersproget.</li>
+<li>Event Management - Med kalender og deltagere.</li>
+<li>Online Store - Inkl. produkter, skatter, shipping og betalingsløsninger.</li>
+</ul>
+I det sidste kapitel gives der så en introduktion til Drupal Theming, altså hvordan man tilpasser udseendet på sit site. Dette kapitel skimmede jeg hurtigt henover, da jeg har en hel bog liggende omhandlende emnet.
+
+Using Drupal er en god omfattende bog der virkelig giver et indblik i hvor kraftigt et værktøj Drupal kan være, når man får sat sig ind i det. Jeg har som sagt brugt bogen mens jeg har arbejdet på det nye ubuntudanmark.dk. Det har været let at overføre materialet fra bogen direkte til den virkelige verden pga. det store fokus på use cases. Det kommer til udtryk i at en stor del af alle kapitler er "Hands on"-dele, hvor forfatterne simpelthen gennemgår skridt for skridt hvordan de forskellige moduler installeret og slås til, samt giver forslag til hvordan man kan sætte dem op, man kan altså ved at læse et enkelt kapitel ende med et fuldt funktionelt site, der kan klare de opgaver der beskrives i starten af kapitlet.
+
+Jeg synes som nævnt at det er en rigtig interessant bog der giver et godt indblik i Drupal. Dens fordele er at den er så case orienteret at man kan se direkte at de ting man sætter op i systemet kan bruges lige efter man har sat dem op. Den er altså utroligt praktisk orienteret. De kraftige fokus på cases kan dog også virke som lidt negativt, man kan nemlig godt ende ud med at mangle en lidt mere dybdegående indsigt i nogle af elementerne. F.eks. er der sådan noget som <a href="http://drupal.org/project/views">views</a>, der er en meget vigtig del af et Drupal site. Disse views bliver løbende indkorporeret i de forskellige cases, men man kan godt føle at man mangler et mere overordnet blik over hvad det er Views er, og hvordan man sætter dem ordentligt op så man bedre kan benytte dem i sine egne projekter. Det er lidt synd at nogle af disse bredere emner til en hvis grad bliver underprioriteret, men man vil nok kunne dække de fleste behov med bogen i hånden.
+
+Bogen kan lånes på dit lokale <a href="http://bibliotek.dk/">bibliotek</a>, eller <a href="http://www.amazon.com/gp/product/0596515804?ie=UTF8&amp;tag=jespejarls-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0596515804">købes online.</a>

@@ -1,0 +1,8 @@
+---
+title: 'Aprils 30-dages udfordring'
+date: 2013-04-03
+---
+
+Nu har jeg efterhånden ikke haft en <a href="http://jesperjarlskov.dk/30-day-challenges-og-min-januarudfordring/">30-dages udfordring</a> siden Januar. Det holder jo ikke hvis jeg nogensinde skal kunne nå at gennemføre min. 3 stk i løbet af året. Desuden har jeg nu i ca. 3 måneder arbejdet med forskellige systemer og metoder, til at holde overblik over mine projekter og til at nå mere, så jeg burde have lært noget brugbart efterhånden, og det mener jeg da også at jeg har.
+Jeg har flere gange læst om den fantastiske sammenhæng mellem motion og produktivitet. Jeg har ingen konkrete beviser på sammenhængen, men jeg mener selv at jeg har set en sammenhæng i form af øget produktivitet på dage hvor jeg har dyrket en eller anden form for motion.
+Min 30-dages udfordring for April bliver derfor at starte hver dag med at dyrke en eller anden form for motion. Omfanget vil svinge meget fra dag til dag, alt efter hvad jeg lige har af tid fra morgenstunden. Nogen dage vil jeg starte stort enten med en <a href="http://www.crossfitcopenhagen.dk/">WOD</a> eller en løbetur, mens andre dage (især arbejds- og tømmermandsdage) vil være noget mindre prangende, disse kunne f.eks. bestå af 10 armbøjninger eller lignende. Planen er selvfølgelig at dette skal hjælpe mig til at blive mere produktiv, men det skal også hjælpe med at holde mig til ilden i forbindelse med min træning, og ændre mit mindset mht. både produktivitet og træning. Dette er et emne jeg vil komme mere ind på i senere indlæg, hvor jeg også vil komme lidt ind på hvad der kom ud af udfordringen med de <a href="http://jesperjarlskov.dk/30-day-challenges-og-min-januarudfordring/">750 ord fra min Januarudfordring</a>.

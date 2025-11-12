@@ -1,0 +1,59 @@
+---
+title: 'Asus Eee Box som Debian server.'
+date: 2009-01-28
+---
+
+<h2>Asus Eee Box B202</h2>
+Endelig ankom min nye Eee Box B202. I sort, hvis det skulle have interesse.
+Det er en lækker lille maskine, og rent umiddelbart virker den utroligt stille. Den blive ihvertfald konstant overdøvet af min desktop PC der står et stykke længere væk.
+
+Udover selve maskinen, samt selvfølgelig en strømforsyning medfølger også en fod, et ophæng, en WIFI-antenne, og for at det ikke skal være løgn, også med DVI-VGA converter, et keyboard og en lille mus, de to sidste i USB-versioner. Der mangler altså kun en skærm før man er kørende.
+
+Det eneste problem er at den kommer med Windows XP præinstalleret, men ingen er jo fuldkommen. Som læserne af min blog nok har opdaget, er jeg normalt Ubuntubruger, men da jeg har tænkt mig udelukkende at bruge den som server har jeg valgt at smide Debian på den i stedet.
+Da maskinen kommer uden CD-drev kræves det et SD-kort eller en USB-stick, samt mod på at rode minimalt med BIOS'en, hvis man vil skifte styresystem. Det hele går dog let og smertefrit, og det er tydeligt at mærke at maskinen er bygget til at boote fra alle de tilslutningsmuligheder den kan komme i nærheden af.
+Jeg valgte at installere fra et SD-kort, da det var det eneste jeg lige havde adgang til, men installation fra USB-stick foregår så vidt jeg ved på ca. samme måde.
+For at gøre det endnu lettere findes der endda en Eee version af Debian, der kommer komplet med nødvendige drivers osv. jeg tog selv udgangspunkterne i projektets <a href="http://wiki.debian.org/DebianEeePC/HowTo/Install">install instructions</a>. Jeg giver her et oprids af hovedpunkterne.
+
+<h2>Debian installer på SD-kort</h2>
+Først downloades et Debian Eee image, som jeg overførte til mit SD-kort med programmet dd.
+<blockquote>dd if=Desktop/debian-eeepc.img of=/dev/[device]</blockquote>
+Hvor [device] er det device du vil have installere fra. Jeg var selv meget i tvivl om hvilket device der svarede til mit SD-kort, men med
+<blockquote>ls -l /dev/disk/by-id/ </blockquote>
+fandt jeg det hurtigt.
+Efter filen er dd'et over på kortet skal du huske at køre en 
+<blockquote>sync</blockquote>
+for at sikre at din maskine er HELT færdig med at kopiere til kortet.
+Herefter kan kortet tages ud, og sættes over i Eee'n.
+
+<h2>Debian på Eee B202</h2>
+For at boote fra SD-Kort skal man først sørge for at sætte kortlæseren som første bootprioritet i BIOS, denne er heldigvis let tilgængelig fra Express Gate. Vær opmærksom på, ved installation fra SD-Kort, at kortet IKKE står på boot-listen fra starten af. Jeg troede fejlagtigt at kortet gik under betegnelsen [removable drive], men jeg tog fejl. Kortet skal man selv tilføje til listen, og flytte op øverst. Enheder kan tilføjes bootlisten ved at markere et af punkterne på listen, og trykke enter.
+
+Express Gate kan slås fra i BIOS hvis man ikke skal bruge det, da det giver en irriterende fejlbesked under opstart hvis man fjerner den harddiskpartition det ligger på.
+
+Herefter vælges "safe &amp; exit" hvorefter computeren vil genstarte, og boote fra det valgte device.
+Installationen er som altid på Debian, og handler mest om at man skal udfylde nogle svære felter som navn, og hvilket password man ønsker. Da der er tale om en netinstall er det vigtigt at computeren har adgang til internettet, så et kabel kan være godt at have. Bruges Debian-Eee installationen er det dog muligt allerede under installation at opsætte det trådløse netværkskort, givet man kan huske sit trådløse netværks SSID og krypteringskode (som man selvfølgelig har på sit trådløse netværk).
+
+Resten af spørgsmålene er de samme som altid på en linuxinstallation hvor man bl.a. kan vælge at sætte størrelsen på sine partitioner hvis man har lyst, eller lade installeren gøre det hvis man ikke gider rode med det selv.
+Jeg lavede selv 3 partitioner:
+Jeg lavede en swap, på 2GB som selvfølgelig blev lavet som swap-filsystem.
+Derudover afsatte jeg 20 GB til / (root) , og smed resten som /home , begge som ext3.
+
+Resten af installationen kørte uden problemer, også efter jeg havde fjernet SD-kortet. Efter installationen genstartede maskinen, og bootede i Debian som planlagt, klar til at logge ind med den bruger jeg havde opsat under installationen.
+
+<h2> Sidste skridt: SSH</h2>
+Det sidste der mangler er SSH, der giver remote adgang til maskinen. Det installeres uden problemer da Debian, ligesom Ubuntu, bruger <a href="http://jesperjarlskov.dk/2008/programmer-via-linux-terminalen/">Apt pakkemanager fra terminalen</a>. En forskel på Linux og Ubuntu er dog at Debian ikke bruger sudo til super user opgaver. Derimod bruges
+<blockquote>su</blockquote>
+for at starte en administrator session. Herefter bruges samme kommandoer som i Ubuntu, bare uden sudo.
+Debian's repositories indeholder en SSH-metapackage der både installerer OpenSSH-server og en SSH klient. Det kræver altså bare en simpel
+<blockquote>aptitude install ssh</blockquote>
+for at du er kørende.
+Konfigurationen til ssh-serveren styres via. config-filen
+<blockquote>/etc/ssh/sshd_config</blockquote>
+hvis du ændrer i filen så husk at restarte SSH-serveren, for at lade ændringerne træde i kraft.
+<blockquote>/etc/init.d/ssh restart</blockquote>
+
+Sidste skridt er at lukke maskinen ned
+<blockquote>shutdown -h now</blockquote>
+stille den hvor den skal stå fra nu af, og fjerne alle ledninger pånær strøm og netværket, trykke på power, og vente på at Debian starter op. Herefter et det muligt at SSH'e til maskinen, og opsætte alt hvad man eller lyster herfra.
+
+Et forslag kunne jo være at opsætte en LAMP server. Fremgangsmåden er den samme som ved <a href="http://jesperjarlskov.dk/2009/lamp-linux-apache-mysql-php-pa-dit-ubuntu-desktop/">opsætning af LAMP på Ubuntu</a>.

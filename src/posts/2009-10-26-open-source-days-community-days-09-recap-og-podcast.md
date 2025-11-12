@@ -1,0 +1,39 @@
+---
+title: 'Open Source Days Community days 09 - recap og podcast'
+date: 2009-10-26
+---
+
+[caption id="" align="alignright" width="230" caption="Fra venstre: jlouis, jarlen, Søren, Peter Toft &amp; Niels Kjøller"]<a href="http://ivaerk.dk/"><img alt="5 personer til Open Source Days" src="http://jesperjarlskov.dk/wp-content/uploads/2009/10/5040.jpg" width="200" height="115" /></a>[/caption]
+Som nævnt i et tidligere indlæg brugte jeg det meste af min lørdag i sidste weekend på <a href="http://jesperjarlskov.dk/open-source-community-days/">Open Source Days Community days</a>.
+Det var et rigtig godt arrangement med en række interessante foredrag og diskussionsoplæg, samt en masse networking.
+Selv så jeg to foredrag, og deltog i en enkelt <a href="http://en.wikipedia.org/wiki/Birds_of_a_Feather_(computing)" title="Birds of Feather">BoF</a>.
+
+<h2>Fremtid for brugergrupper mv. - hvordan bruger vi vores kræfter indenfor open source bedst muligt?</h2>
+Jeg startede dagen med at deltage i en BoF. Det gik ud på at Version2 blogger og open source entusiast <a href="http://petertoft.dk/">Peter Toft</a> provokerede forsamlingen af open source foreningsmedlemmer, ved at påpege hvor forkert vi egentlig organiserer os og hvilke problemer dette kan give. Dette startede en god debat om godt og skidt ved den foreningsstruktur der findes idag, hvor en lang række foreninger såsom SSLUG, <a href="http://www.dkuug.dk/">DKUUG</a>, <a href="http://www.bsd-dk.dk/">BSD-DK</a> og <a href="http://ubuntudanmark.dk/">Ubuntudanmark</a> for bare at nævne et par stykker.
+Derudover var der en aktiv diskussion om hvordan man evt. kunne optimere strukturerne, og hvordan vi sammen kan arbejde fremadrettet mod at tiltrække nye kræfter, og frigøre kræfter fra bureaukrati, der måske i stedet kan bruges til egentligt arbejde.
+Det var en interessant diskussion om et spændende og relevant emne, men de 45min var ikke nok, og det endte meget brat med en skræmmende mangel på konklussioner, men jeg håber det har inspireret nogen til at gribe bolden, og føre tanken videre så vi kan se noget handling på området.
+
+<h2>Sociale dynamikker i et free software community som Ubuntu</h2>
+Efter diskussionen var jeg inde og høre <a href="http://andreaslloyd.dk/">Andreas Lloyd</a> fortælle om sin kandidatafhandling. Der var tale om et antropologisk studie i Ubuntus udviklingsmiljø og de sociale relationer der får dette til at virke.
+Næsten alle beskrivelser og introduktioner til Ubuntu communitiet er skrevet af folk der har været en del af dette i længere tid. Det er derfor sjovt at få et alternativt syn på vores community, og så endda med en helt anden tilgangsvinkel end den man normalt ser. Foredraget bar dog tydeligt præg af at være rettet mod folk med et ikke-teknisk perspektiv, og som ikke kendte til Ubuntu communitiet i forvejen, og dette faldt helt klart ved siden af den gruppe mennesker som rent faktisk så foredraget denne gang. Det var lidt synd da det gjorde at foredraget indeholdt rigtig mange selvfølgeligheder for langt de fleste tilhørere, men der var nu stadig nogle interessante pointer.
+
+<h2>Effektivt Community Management</h2>
+Det sidste foredrag jeg så var <a href="http://kloeri.livejournal.com/">Bryan Østergaards</a> foredrag om hvad han mener er effektiv community management.
+Bryan har startet Linux-distributionen <a href="http://www.exherbo.org/">Exherbo</a> og bruger det meste af sin tid på at drive denne distribution det tilhørende community fremad.
+Bryan har en meget alternativ tilgang til hvordan man bygger et community, i forhold til mange andre, heriblandt Ubuntufolkene. Han arbejder utroligt meget med brugerinddragelse, og prøver så vidt muligt at udviske barrieren mellem bidragsydere, og brugere af distributionen, i håb om at få så mange brugere som muligt til at bidrage aktivt. Dette gør han både for at få flere kompetente bidragsydere, men også for at lade brugeren være med til at skubbe distributionen i en retning som den enkelte mener er brugbart.
+Jeg synes Bryan har nogle rigtig interessante synsvinkler i forhold til hvordan man driver et effektivt community, og jeg tror han har nogle pointer som mange andre projekter og community leder kan tage ved lære af.
+
+<h2>Ubuntudanmark podcast</h2>
+Udover de tre nævnte events brugte jeg det meste af dagen i Ubuntudanmarks community bod. Her lavede vi lidt forskelligt, bl.a. fik vi fremvist det nye Ubuntu 9.10 - <a href="http://jesperjarlskov.dk/koala-med-karma/">Karmic Koala</a> som udkommer på torsdag, delt klistermærker ud, og selvfølgelig kastet kuglepenne efter SSLUG-standen som man bør.
+Dette resulterede dog i at vi ikke længere kunne tillade os at forlade boden uden vores <a href="http://jesperjarlskov.dk/koala-med-karma/">sløseri blev offentliggjort</a> :-) men vores <a href="http://twitter.com/killsound/statuses/5123415749">skarpe support</a> var dog klar så snart de blev tilkaldt.
+Udover hygge og reklame brugte Niels Kjøller og jeg en del tid i vores mobile studie på at optage en række interviews med nogle af de spændende foredragsholdere. Dette er indtil videre kommet til udtryk i et <a href="http://ubuntudanmark.dk/podcast/">Ubuntu-dk podcast</a> i et OSDCD special edition. Dette indeholder interviews med:
+<ul>
+<li>Kristian Willman</li>
+<li>Ole Tange</li>
+<li><a href="http://petertoft.dk">Peter Toft</a></li>
+<li><a href="http://andreaslloyd.dk/">Andreas Lloyd</a></li>
+<li>samt en random gut der beder om en kuglepen.</li>
+</ul>
+Vi har stadig et par interviews, som vi håber på at sende ud på et special edition part 2, i næste uge.
+
+Tak for et godt arrangement.

@@ -1,0 +1,12 @@
+---
+title: 'Hurra, der er krise!'
+date: 2009-06-15
+---
+
+<img src="http://jesperjarlskov.dk/wp-content/uploads/2009/06/hurradererkrise.jpg" alt="Hurra der er krise, coverforside." style="float:right" width="177" height="300" />
+Finanskrisen har ramt hele verden, det ved vi allesammen for vi hører om det i nyhederne hver dag. Men der findes mange slags kriser, og i følge forfatteren Alexander Kjerulf vil alle virksomheder på et eller andet tidspunkt opleve en krise, enten en global finanskrise som den vi har nu, eller en intern krise i virksomheden. 
+Når virksomheder oplever nedgangstider siger den gængse overlevelsesdrift at der skal fyres medarbejdere og generelt skæres ind til benet, for at holde alle omkostninger i bund, hvis virksomheden nogensinde skal have en chance for at komme på fode igen. Men det er den helt forkerte tilgangsvinkel, påstår Alexander Kjerulf, og viser vha. en række case studies fra det virkelige verden, samt forskning i arbejdsglæde og psykologi, i bogen <a href="http://hurradererkrise.dk/">Hurra, der er krise</a> hvordan en virksomhed i virkeligheden bør gribe en krise an, for at komme styrket ud på den anden side.
+Det handler om ærlighed og åbenhed i en kamp for at forbedre arbejdsglæden i den kriseramte virksomhed. Det nytter i følge Alexander, ikke noget at fyre medarbejdere i hobetal, da den negative stemning der vil ophobe sig i virksomheden kun vil gøre krisen endnu værre, desuden vil enhver krise slutte på et tidspunkt, og man skal som virksomhed passe på ikke at komme forkrøblet ud på den anden side. Alexander præsenterer på en overskuelig og let læselig måde nogle konkrete forslag til hvordan man takler krisetider i virksomheden.
+Som en lille bonus indeholder bogen også nogle små hurtige tests, hvor du kan teste dig selv og din virksomhed, om i er i krisestemning da man ofte selv vil være blandt de sidste der opdager problemet.
+
+Bogen er lige til at gå til, og let læselig, og fortæller om hvorfor arbejdsglæde er så vigtigt både for de enkelte medarbejdere, men også for effektiviteten på arbejdspladsen. Derudover gives en lang række tips til hvad man kan gøre som medarbejder, men især som leder, for at forbedre arbejdsglæden i sin afdeling, og på arbejdspladsen generelt. Mange er tingene burde være almindelig sund fornuft, men jeg synes stadig der er mange af pointerne der giver en mindre aha-oplevelse alligevel. Alt i alt en god bog som jeg tror mange kunne lære noget af, især folk med personaleansvar.

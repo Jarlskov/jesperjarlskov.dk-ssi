@@ -1,0 +1,29 @@
+---
+title: 'Web Analytics Wednesday testet i København'
+date: 2009-10-07
+---
+
+Som jeg skrev i mandags har der her til aften været <a href="http://jesperjarlskov.dk/web-analytics-wednesday-testes-i-k%c3%b8benhavn/">Web Analytics Wednesday i København</a>.
+Ligesom sidst vil jeg skrive en <a href="http://jesperjarlskov.dk/web-analytics-wednesday-k%c3%b8benhavn//">Web Analytics Wednesday anmeldelse</a>.
+Aftenen startede som sidst med et par ord fra aftenens sponsor <a href="http://www.webtrekk.de/">WebTrekk</a>, denne gang med noget mindre produktfokus end sidst, fokus var derimod lagt på tendenser på nettet, der var altså næsten mere tale om et minioplæg, end om en reklame. Det var endnu engang ikke det mest oplivende foredrag, men hun havde nogle gode pointer.
+Aftenens hovedtaler var som nævnt i forrige indlæg <a href="http://twitter.com/erictpeterson">Eric T. Peterson</a>, han ville hovedsageligt snakke om test, i forbindelse med whitepaperet <a href="http://www.sitespect.com/testingsuccess/">Successful Web Site Testing Practices</a> som forresten kan downloades gratis. Det omhandler kort fortalt om de ti ting Eric mener er vigtigst at have styr på inden man starter test af sit website.
+<ul>
+<li>1 - Saml et godt team. Du kan ikke klare alting selv.</li>
+<li>2 - Allier dig med dine interessenter. Du kan ikke gennemføre større ændringer uden ledelsens accept.</li>
+<li>3 - Skriv en formel testplan. Du skal fra starten have et klart overblik over hvor du står, og hvor du vil ende, og dette skal du kunne formulere klart overfor alle interessenter i projektet.</li>
+<li>4 - Tænk på målingerne. Hvordan ved du om dine mål opnås?</li>
+<li>5 - Definer succes og fiaskoscenarier. Du skal på forhånd vide hvornår du vil kalde et testscenarie en succes eller en fiasko, så du kan få stoppet testen i tide.</li>
+<li>6 - Test din test. Det nytter ikke at lancere en stor test af dit website, hvis dit målesoftware ikke virker på testsitet.</li>
+<li>7 - Vær klar på hvad dit tidshorisont er. Det nytter ikke at gå efter et bestemt antal testpersoner, du behøver en fastsat testperiode. Dine besøgende mandag morgen reagerer anderledes end dine besøgende tirsdag eftermiddag.</li>
+<li>8 - Kommuniker dine testresultater, og effekten af disse. Lige meget om testen var en succes eller en fiasko er det vigtigt at kommunikere resultatet ud, samt en afklaring af hvad der er lært af testen. Man lærer også af sine fejl!</li>
+<li>9 - Test forskellige segmenter af besøgende. Besøgende i forskellige aldersklasser og baggrunde reagerer forskelligt. Prøv at teste så segmenteret som muligt.</li>
+<li>10 - Grav dybere efter muligheder. Dine test- og analysedata kan ofte bruges til mere end hvad dine test- og analyseværktøjer kan. Du kan ofte få meget mere ud af dine data med et statistikprogram og en statistiker.</li>
+</ul>
+Dette opsummerer kort hvad Eric talte om, hvis det virker interessant kan man selvfølgelig læse meget mere om det i hans whitepaper.
+Herefter holdt han Q&amp;A for et meget spørgelystent og vidende publikum. Det var rigtigt fedt at se og høre en række erfarne analytikere stille spørgsmål til en meget vidende mand. Det gav nogle meget interessante diskussioner, og der kom flere gode pointer frem som jeg tror alle lærte noget af.
+Det var alt i alt et godt og levende foredrag, og Eric var både inspirerende, underholdende og tydeligvis meget inde i sit felt.
+Som afslutning havde <a href="http://twitter.com/webanalytiker">Jacob Kildebogaard</a> fået lov til at snakke et par minutter om hans <a href="http://www.webanalytiker.dk/">webanalytiker</a>.dk projekt, hvor han vha. en blog og et forum med kloge mennesker prøver at udbrede viden om webanalyse.
+
+Det var anden gang jeg deltog i Web Analytics Wednesday i København, og der var flere gengangere fra sidst jeg kunne genkende. Jeg synes det bliver hyggeligere for hver gang, og der er mange personer omkring buffeten/fadølsanlægget der virker meget åbne, så jeg synes der er ret god mulighed for at falde i snak med folk, selvom man ikke kender nogen på forhånd.
+
+Endnu engang tak til sponsorerne <a href="http://www.webtrekk.de/">Webtrekk</a> og &lt;a href=&quot;http://www.iihnordic.dk/&quot;IIH Nordic</a> for at gøre dette arrangement muligt.</a>

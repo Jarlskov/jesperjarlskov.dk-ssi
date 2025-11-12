@@ -1,20 +1,12 @@
 ---
-title: About This Blog
+title: About
 menu_order: 1
-description: Learn more about this blog and its purpose.
+description: The person behind
 ---
+Hello,
 
-# About This Blog
+This is the blog and free space of Jesper Jarlskov.
 
-This blog is a demonstration of a simple static site generator built with PHP, Composer, League/CommonMark, and Twig.
+This site will feature content on whatever I find interesting at any given time. Tech and development has always been hot topics for me, but engineering management is currently top of mind, so expect more of that.
 
-It features:
-
-*   Markdown content with YAML front matter.
-*   Template inheritance for clean HTML structure.
-*   SEO and social sharing meta tags.
-*   A tagging system for content organization.
-*   Support for static pages in the navigation menu.
-*   Mermaid diagram rendering.
-
-Feel free to explore the code and adapt it for your own projects!
+For more info about me, look me up on [LinkedIn](https://www.linkedin.com/in/jarlskov/) or [Github](https://github.com/Jarlskov/).

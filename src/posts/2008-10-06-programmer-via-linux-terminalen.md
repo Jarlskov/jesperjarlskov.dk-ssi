@@ -1,0 +1,75 @@
+---
+title: 'Programhåndtering via linux'' terminal'
+date: 2008-10-06
+---
+
+For et stykke tid siden skrev jeg en guide til <a href="http://jesperjarlskov.dk/grundl%C3%A6ggende-arbejde-med-linux-terminal/">Grundlæggende arbejde med linux' terminal</a>, som jeg lovede at følge op på med endnu en guide til flere programmer, kommandoer og tips og tricks med terminalen. I denne artikel vil jeg hovedsageligt fokusere på håndtering af programmer, dvs. at finde, installere, opdatere, fjerne og dræbe programmer via terminalen.
+<h2>Tip</h2>
+Først et lille trick. Hvis man skal vænne sig til at bruge terminalen noget oftere, er det rart at spare noget skrivearbejde. Det er meget ærgeligt at have siddet og opbygget en lang kommando som man regner med skal løse en eller anden opgave (eller på anden måde gøre et eller andet sejt ;)) bare for at få en fejl fordi man har glemt et sudo foran eller noget lignende.
+Man kan i Linux' terminal bruge piletasterne op/ned til at bladre igennem de kommandoer man tidligere har kørt. Hvis du har lavet en tastefejl eller lignende i en kommando, kan du altså med et klik på opad-pilen hente den fejlende kommando, med højre-venstre-pil kan du så gå til det sted hvor kommandoen fejlede, og rette det. Dette kan spare mange problemer og irritationer for mange mennesker.
+Linux gemmer som standard et antal brugte kommandoer alt efter indstillinger. Jeg mener Ubuntu gemmer omkring 500 som standard. Du kan se din maskines liste med kommandoen
+<code>history</code>
+<h2>aptitude</h2>
+Som nogen måske ved, benytter Ubuntu det pakkesystem der hedder apt. Advanced Packaging Tool. Det er et system bestående af en række servere der stiller en masse programmer til rådighed, både som ren source kode (den kode skrevet af programmørerne) og som binære filer (programmer klar til at blive kørt på din maskine). Dette er efter min mening en af Ubuntu's største fordele, da det er så let at finde og installere de programmer man skal bruge.
+Ubuntu kommer med nogle programmer der kan bruge dette apt-system, det mest kendte er nok apt-get. Jeg vil i denne artikel tale om alternativet, "aptitude".
+Jeg er ikke 100% sikker på de fundamentale forskelle mellem apt-get og aptitude, men jeg har hørt en række forskellige forklaringer, og disse, sammen med mine egne erfaringer gør at jeg selv benytter aptitude.
+<h3>update</h3>
+Før du begynder at rode rundt med pakkerne og kommandoerne er det en fordel at opdatere din liste med pakker. Dette betyder at du har adgang til de nyeste pakker. Dette er selvfølgelig let.
+<code>aptitude update</code>.
+<h3>search</h3>
+En af de ting jeg er glad for i aptitude er søgefunktionen. Apt-get kommer også med en søgefunktion (i apt-cache) men jeg ser nogle fordele i aptitude's udgave.
+Den er ikke så svær at bruge, da det er en simpel kommando:
+<code>aptitude search [søgeord]</code>.
+Hvis du f.eks. vil finde alt hvad der findes af firefox-relaterede programmer bruges:
+<code>aptitude search firefox</code>. (Det er ikke sikkert at din bruger på computeren har adgang til at bruge aptitude, da der muligvis skal bruges administrator adgang, se SUDO som nævnt i <a href="http://jesperjarlskov.dk/grundl%C3%A6ggende-arbejde-med-linux-terminal/">den tidligere artikel</a>).
+En interessant feature i aptitude er her linjen i venstre side af søgeresultatet, hvor der for hver pakke står et eller flere bogstaver. En forklaring på disse bogstaver kan findes i aptitude's manual, men de vigtigste to er:
+<ol>
+	<li> p - Intet spor af pakken (med andre ord, ikke installeret).</li>
+	<li> i - Pakken er installeret på computeren.</li>
+</ol>
+<h3>install</h3>
+Når du har brugt noget tid med at fedte rundt med programsøgning er det naturlige næste skridt normalt at installere programmer. Dette foregår heldigvis lige så nemt, hvis ikke nemmere.
+<code>aptitude install  [pakkenavn]</code>.
+Sværere behøver det ikke at være :-). Ikke engang hvis du gerne vil installere flere programmer samtidig.
+<code>aptitude install [pakke1] [pakke2]</code>.
+De fleste programmer er afhængige af hinanden på kryds og tværs, f.eks. kan programmer der har en brugergrænseflade selvfølgelig ikke køre hvis du ikke har installeret et grafisk miljø á la Gnome eller KDE. Det er heldigvis ikke et problem du behøver at bekymre dig om så længe du bruger apt, apt sørger nemlig selv for at hente alle de ekstraprogrammer du behøver når du installerer et program, dependencies, som de hedder i apt-kredse.
+<h3>remove</h3>
+Hvis du på et tidspunkt finder ud af at du ikke længere har brug for et bestemt program. Har du selvfølgelig mulighed for let og smertefrit at fjerne det igen.
+<code>aptitude remove [pakkenavn]</code>, og det er her jeg virkelig synes at aptitude træder i karakter og viser sine kræfter.
+Fordi på samme måde som den holder styr på de dependencies et program har når du installerer det, holder det også styr på de dependencies et program har haft, når du skal fjerne det igen. Det vil altså sige at aptitude sørger for selv at rydde op efter sig når du installerer og fjerner programmer, og du slipper for at have skrammel liggende som du måske har haft brug for i gamle dage.
+<h3>safe-upgrade</h3>
+En vigtig ting når man administrerer en computer er sørge for at alle programmer på maskinen er opdateret. Det kan der være mange gode grunde til. For det første er der et sikkerhedsperspektiv. Fejl i programmer findes og rettes konstant, mange af disse fejl er potentielle sikkerhedshuller på din maskine, og det er derfor en fordel at disse lukkes. På trods af at jeg mener at sikkerheden på Linux generelt er højere end på windowsmaskiner, er det stadig vigtigt at være opmærksom på dette sikkerhedsperspektiv.
+Til gengæld er opdateringer, som alt andet jeg har omtalt, hurtigt og smertefrit, og kræver minimal indblanding fra brugeren. Det klares vha.
+<code>aptitude safe-upgrade</code>.
+For at være sikker på at få de nyeste opdateringer bruges safe-upgrade sammen med den tidligere nævnte update kommando. Det er muligt at sætte Ubuntu til at køre flere kommandoer i rap ved at adskille disse med &amp;&amp;, for at opdatere hele din installation til de nyeste versioner af dine pakker bruges altså:
+<code>aptitude update &amp;&amp; aptitude safe-upgrade</code>.
+En lille kommando der kan hjælpe enormt.
+<h2>|</h2>
+Nogle programmer, som f.eks. aptitude search giver et vist output. Dette kan i Linux sendes forskellige steder hen, alt efter hvad det skal bruges til. Normalt sendes outputtet fra aptitude search bare tilbage til skærmen, også kendt som stdout (standard output), men dette kan ændres hvis man har brug for det. Outputtet fra et program kan f.eks. bruges som input til det næste. Denne metode kaldes i linuxterminalen vha. | tegnet, kaldet pipe. Et eksempel på dette vil blive vist i næste afsnit.
+<h2>grep</h2>
+grep kaldes med et input, det kan være en fil eller outputtet fra et andet program, vha. den tidligere nævnte pipe, samt et søgeord. grep vil så gennemgå hele det givne input, og printe alle de linjer der indeholder det givne søgeord. Dette bliver bl.a. brugt i forbindelse med aptitude search, hvis resultatlisten bliver for lang, så kan der sorteres i resultatet vha. pipe og grep.
+I den tidligere foreslåede søgning efter firefox kom der ret mange resultater, og det kan være svært at finde det man leder efter, hvis man leder efter en specifik pakke. Hvis vi leger at vi leder efter pakken indeholdende firefox 3 kan vi finde alt relevant med kommandoen:
+<code>aptitude search firefox|grep 3</code>.
+Denne kommando består som nævnt af 3 kommandoer. Først foretages den samme søgning som før. Derefter sendes søgeresultatet videre til grep programmet, vha. | (pipe). Til sidst gennemgår grep hele søgeresultatet, og outputter kun linjer indeholdende søgeord nr. to, altså "3", til terminalen.
+
+<h2>ps</h2>
+ps er en forkortelse for process status. Det er et program der hjælper med at administrere alle programmer der kører på maskinen. Den kan give computeradministratoren (eller brugeren)
+<strong>aux</strong>
+Den udgave af ps der følger med Ubuntu er meget omfattende. Den samler kommandoer fra forskellige ps-udgaver, og kan derfor både forstå UNIX options, BSD options og GNU long options. Det giver i alt rigtig mange muligheder der vil tage meget lang tid at gennemgå, og desuden har jeg aldrig rigtigt haft brug for andre end den ene jeg bruger normalt, nemlig:
+<code>ps aux</code>.
+Spørger man <code>man ps</code> er dette en kommando der lister alle processer, med BSD syntax (hvis det har interesse for nogen :-)). Dette vil selvfølgelig normalt være rigtig mange processer, og det vil derfor være svært at overskue, men her kommer vores to gode venner | og grep ind i billedet igen, de hjælper nemlig med at finde frem til de processer der har interesse. Hvis man f.eks. er interesseret i at vide hvilke processer firefox har kørende, bruges:
+<code>ps aux|grep firefox</code>.
+Dette vil outputte forskellige informationer om de processer firefox kører, men de første to, vil normalt være de interessante. Første kollone angiver brugernavnet på den bruger der har startet processen, dette har hovedsageligt interesse på maskiner med flere brugere, men det kan også være interessant at se om en process er startet af den bruger der er logget på, eller af root. Kollonne nr. to angiver pid, hvilket er en forkortelse for "process id", dette er altså et unikt ID nummer for den enkelte process.
+
+<h3>kill</h3>
+Hvad kan dette så bruges til?
+Det kan bl.a. bruges hvis man skulle gå hen og få problemer med et program der ikke svarer, så vil man jo normalt have interesse i at tvinge det til at lukke. Til dette skal du nemlig bruge kill kommandoen, samt processens pid.
+Hvis du f.eks. har fundet ud af at din Firefoxbrowser er holdt op med at svare, bruger du, som nævnt:
+<code>ps aux|grep firefox</code>
+til at finde pid, og derefter:
+<code>kill -9 [pid]</code>
+til at dræbe processen. -9 er et udtryk for hvor "kraftigt" du prøver at dræbe processen. Der findes 4 af disse grader -1, -2, -15, -9, som stiger i "hårdhed" i den nævnte rækkefølge, startende fra -1 hvor man  prøver at få processen til at lukke ved at lukke kommunikationen med den enkelte process, til -9 der tvinger processen i knæ med det samme.
+Hvorfor graderne er navngivet på den givne måde er jeg dog ikke klar over.
+
+Jeg håber artiklen har givet dig blod på tanden til at prøve at gøre dit eget liv lettere ved at overflytte noget af dit eget administrationsarbejde til terminalen. Er dit liv blevet lettere efter du har lært at bruge terminalen, eller mangler du stadig på det sidste lille skub før du springer ud i det, og i det tilfælde, hvad tror du at du mangler før du vil tage springet?
+Eller har du bare forslag til hvad fremtidige artikler evt. kunne omhandle? Skriv en kommentar og kom med dit besyv.

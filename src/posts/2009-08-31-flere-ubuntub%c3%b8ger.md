@@ -1,0 +1,8 @@
+---
+title: 'Flere Ubuntubøger'
+date: 2009-08-31
+---
+
+<a href="http://www.artofcommunityonline.org/"><img style="float:right" src="http://farm4.static.flickr.com/3597/3516061651_8910ba25c9_m.jpg" alt="the Art Of Community"></a>
+Som nævnt i mit sidste indlæg om <a href="http://jesperjarlskov.dk/flere-nye-b%C3%B8ger/">nye Ubuntu bøger</a> har Jono Bacon <a href="http://www.jonobacon.org/2009/08/19/the-art-of-community-now-available/">annonceret udgivelsen</a> af sin nye bog <a href="http://jesperjarlskov.dk/art-of-community-f%C3%B8rste-kapitel/">the Art of Community</a>. I den forbindelse lovede han også at <a href="https://lists.ubuntu.com/archives/loco-contacts/2009-July/003449.html">alle officielle LoCos kan få en gratis kopi</a>. Da vi er udenfor USA er der desværre kun tale om en digital kopi. Bogen er udgivet under en <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">CC-by-nc-sa</a> hvilket betyder at det er tilladt at dele og ændre bogen alt det man vil, så længe det ikke er i kommercielt henseende, man fortæller hvor man har fundet originalen, samt at man udgiver alle ændringer under samme licens.
+Bogen kan findes i en <a href="http://www.artofcommunityonline.org/downloads/jonobacon-theartofcommunity-1ed.pdf">PDF-version</a>, og jeg vil opfordre alle der arbejder med communities, hvad enten det er i Open Source sammenhæng, eller i anden foreningssammenhæng, at læse bogen, jeg glæder mig selv meget til jeg modtager min egen hard copy udgave.
