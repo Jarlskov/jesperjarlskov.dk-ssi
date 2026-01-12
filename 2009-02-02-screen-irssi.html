@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                                            <title>Screen + Irssi | JesperJarlskov.dk</title>
+    <meta name="description" content="">
+    <meta name="author" content="Jesper Jarlskov">
+    <link rel="canonical" href="https://jesperjarlskov.dk//2009-02-02-screen-irssi.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jesperjarlskov.dk//2009-02-02-screen-irssi.html">
+    <meta property="og:title" content="Screen + Irssi">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://jesperjarlskov.dk//2009-02-02-screen-irssi.html">
+    <meta name="twitter:title" content="Screen + Irssi">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
+
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <header><nav><a href="/">Home</a><a href="/about.html">About</a><a href="/tags.html">Tags</a></nav></header><main><article><h1>Screen + Irssi</h1><p><small>Published on 2009-02-02 by Jesper Jarlskov</small></p><div><h2>Hvorfor Screen + Irssi?</h2>
+Efter at have installeret <a href="http://jesperjarlskov.dk/2009/asus-eee-box-som-debian-server/">Debian og SSH på min Eee server</a>, samt gjort klar til at hoste og teste PHP applikationer på <a href="http://jesperjarlskov.dk/2009/lamp-linux-apache-mysql-php-pa-dit-ubuntu-desktop/">Ubuntu/Debain LAMP serveren</a>, er det på tide også at gøre plads til lidt pjat og chat.
+Meget af kommunikationen i både det danske og det internationale Ubuntucommunity foregår via <a href="http://da.wikipedia.org/wiki/IRC">IRC protokollen</a>, og IRC er derfor et godt sted at følge med hvis man gerne vil hjælpe til i communitiet, eller hvis man bare gerne vil have hjælp i real-time.
+For at benytte IRC protokollen skal man have en såkaldt IRC-klient. Der findes mange af disse, både med og uden <abbr title="Graphical User Interface">GUI</abbr>. Da projektet her handler om at køre en server der kan styres via ssh vælger jeg <a href="http://irssi.org/">Irssi</a> som er en terminalbaseret IRC-klient.
+For at gøre det en smule mere interessant vælger jeg at køre det igennem programmet <a href="http://en.wikipedia.org/wiki/GNU_Screen">Screen</a>. Screen er et terminal program der lader dig åbne og styre flere terminalvinduer på den maskine det kører på, selvom du kun har åbnet én session. Dvs. det giver mulighed for kun at lave én SSH-forbindelse fra klientmaskinen til serveren, der så kan åbne flere "terminalvinduer" og på den måde køre flere programmer sideløbende. Ydermere lader Screen serveren huske din session fra gang til gang. Du kan altså starte en række terminalprogrammer, lukke SSH-forbindelsen, og logge på igen via SSH, og fortsætte hvor du slap.
+<h2>Hvordan Screen + Irssi?</h2>
+Selve opsætningen er let nok, da standardindstillingerne egentlig er fint nok til langt det meste.
+Begge programmer findes i både Ubuntu og Debians repositories, og kan derfor installeres som med det meste andet.
+Først Screen:
+<blockquote>
+aptitude install screen
+</blockquote>
+Derefter Irssi:
+<blockquote>
+aptitude install irssi
+</blockquote>
+Herfra kører det egentlig af sig selv, og standardopsætningen skulle for de fleste være god nok langt hen af vejen.
+Hvis man gerne vil pille, findes Screen's opsætningsfil i:
+<blockquote>
+/etc/screenrc
+</blockquote>
+Men jeg har aldrig haft behov for at ændre på standardindstillingerne, så jeg kender egentlig ikke rigtigt noget til den.
+opsætningen til Irssi findes i:
+<blockquote>
+~/.irssi/config
+</blockquote>
+Her er der mulighed for at indstille hvilke chatnets (IRC-servere) du benytter, hvilke kanaler (chatrum) på de forskellige chatnets du bruger, samt sætte autojoin på de forskellige chatnets og/eller kanaler, samt auto identify (log-in) på dine chatnets. Dette kan også gøres fra selve programmet hvis man ikke er så glad for at sidde og fedte med config-filer, dette vil jeg komme ind på senere.
+<h2>Screen</h2>
+De grundlæggende ting i screen er forholdsvis lette at lave hvis man har en smule erfaring med terminalbrug (hvilken mine læsere selvfølgelig har, da det efterhånden er et stykke tid siden jeg skrev min <a href="http://jesperjarlskov.dk/2008/grundl%c3%a6ggende-arbejde-med-linux-terminal/">guide til Ubuntu terminalen</a> ;-)), eller bare en smule gåpåmod.
+Først startes screen med:
+<blockquote>
+screen
+</blockquote>
+Der startes så en terminal, hvor du kan starte dine programmer som normalt. Udover de normale terminalkommandoer har screen nogle shortcuts der er gode at kende når man arbejder med programmet. Disse kommandoer bruges med:
+<blockquote>
+ctrl+a, [letter] 
+</blockquote>
+Dvs. man trykker ctrl og bogstavet a samtidig, hvorefter man slipper de to knapper og trykker på det bogstav der svarer til den kommando man leder efter.
+Nogle gode kommandoer er:
+<ul><li>0-9 - skift til vindue 0-9</li><li>c - ny vindue</li><li>d - Detach fra session</li><li>n - næste vindue</li><li>w - Vis vinduer</li><li>k - kill, luk vindue</li></ul>
+Dvs. hvis man vil oprette et nyt terminalvindue i sin screen session trykker man ctrl+a ned samtidig, slipper de to knapper hvorefter man trykker en enkelt gang på c.
+Når man er færdig med at bruge screen kan man enten lukke det ned med
+<blockquote>
+exit
+</blockquote>
+ligesom alle andre terminalsessions, eller man kan bruge ctrl+a+d for at detache. Det vil sige man kobler sig fra sin screen session, men lader den køre i baggrunden så man altid kan få fat i den og arbejde videre med den, på et senere tidspunkt.
+<h3>Reattach</h3>
+Næste gang man vil starte screen skal man så lige overveje hvad det egentlig er man gerne vil. Man kan, ligesom i første omgang, bruge
+<blockquote>
+screen
+</blockquote>
+Til at starte en ny screen-session, eller:
+<blockquote>
+screen -raAd
+</blockquote>
+for at genoptage en evt. gammel screen session, som du tidligere har detachet fra.
+<h2>Irssi</h2>
+Her ville jeg egentlig have skrevet en guide til at bruge Irssi, men jeg har selv været meget glad for 
+<a href="http://ubuntudanmark.dk/forum/viewtopic.php?f=11&amp;t=4473">MenZa's guide til Irssi</a>, så den vil jeg gerne have lov til at anbefale :-)
+<h3>Edit:</h3>
+Jeg vil forresten også gerne gøre lidt reklame for denne <a href="http://michael-prokop.at/stg/irc_workshop.txt">Irssi kommandoliste</a>, med en masse kommandoer der kan være gode at kunne når man er kommet lidt i gang med Irssi.
+</div></article><footer></footer><nav class="post-navigation"><div class="previous"><a href="/2009-01-29-it-og-telestyrelsen-gar-open-source.html">&laquo; Previous: IT og Telestyrelsen går Open Source</a></div><div class="next"><a href="/2009-02-03-ubuntu-debian-mediaserver.html">Next: Ubuntu/Debian medieserver med Playstation 3 support &raquo;</a></div></nav></main><footer><p>&copy; 2026 Jesper Jarlskov</p></footer><script type="module">
+                    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+                    mermaid.initialize({ startOnLoad: true });
+                </script>    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                                            <title>LAMP (Linux, Apache, MySQL &amp;amp; PHP) på dit Ubuntu desktop | JesperJarlskov.dk</title>
+    <meta name="description" content="">
+    <meta name="author" content="Jesper Jarlskov">
+    <link rel="canonical" href="https://jesperjarlskov.dk//2009-01-12-lamp-linux-apache-mysql-php-pa-dit-ubuntu-desktop.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jesperjarlskov.dk//2009-01-12-lamp-linux-apache-mysql-php-pa-dit-ubuntu-desktop.html">
+    <meta property="og:title" content="LAMP (Linux, Apache, MySQL &amp;amp; PHP) på dit Ubuntu desktop">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://jesperjarlskov.dk//2009-01-12-lamp-linux-apache-mysql-php-pa-dit-ubuntu-desktop.html">
+    <meta name="twitter:title" content="LAMP (Linux, Apache, MySQL &amp;amp; PHP) på dit Ubuntu desktop">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
+
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <header><nav><a href="/">Home</a><a href="/about.html">About</a><a href="/tags.html">Tags</a></nav></header><main><article><h1>LAMP (Linux, Apache, MySQL &amp;amp; PHP) på dit Ubuntu desktop</h1><p><small>Published on 2009-01-12 by Jesper Jarlskov</small></p><div><h2>Hvorfor en LAMP-server på sin Ubuntu desktopmaskine?</h2>
+Det kan måske virke underligt at man skulle have lyst til at installere servermoduler på sin arbejdsmaskine. "Servermoduler hører da til på serveren", og det er da også til dels rigtigt. Men der kan være mange gode grunde til også at have servermoduler på sin arbejdsmaskine.
+Min egen grund til at gøre det er at jeg programmerer hjemmesider og webapplikationer i det sprog der hedder PHP. Det er et server-side programmeringssprog, hvilket vil sige at koden bliver afviklet på serveren, i stedet for på klienten, altså i brugerens internetbrowser, på samme måde som <a href="http://da.wikipedia.org/wiki/JavaScript">JavaScript</a> f.eks. gør det.
+Dette betyder at når jeg skal teste de ting jeg har programmeret bliver jeg nødt til at ligge dem på en webserver, for at kunne se hvordan serveren reagerer på koden, og for at se hvordan outputtet (hjemmesiden) kommer til at se ud. Dette vil normalt betyde at jeg skal have fat i mit <a href="http://en.wikipedia.org/wiki/File_Transfer_Protocol">FTP</a>-program, for at ligge alle de sider jeg har ændret på, op hos min webhost, tilgå hjemmesiden og se resultatet.
+Hvis jeg derimod har en webserver kørende på min produktionsmaskine har jeg ikke behov for andet end at have en browser åben der peger på min egen maskine. Når jeg så har ændret i koden skal jeg bare gemme dokumentet og refreshe siden i browseren for at se resultatet af ændringen. Dette giver mig mulighed for at teste meget hurtigere, og meget oftere da jeg ikke skal spilde så meget tid på det, og jeg kan så nøjes med at ligge siden ud til min host når jeg mener jeg har lavet en tilpas stor ændring, samt sikret mig at siden virker som den skal.
+<p>Artiklen kan måske virke lidt overvældende, men installationen og opsætningen i sig selv kan klares ved bare at kopiere de kommandoer jeg har angivet igennem artiklen, og vil normalt ikke tage mere end et par minutter. Jeg har dog anstrengt mig for at forklare alt hvad jeg gør igennem processen, for at give alle en mulighed for at være med, uden at behøve frygte for om deres maskine pludselig bliver ukampdygtig.</p><h2>Installation</h2>
+Men hvordan foregår installationen af denne lampe så? Jo, som overskriften fortæller står LAMP for Linux, Apache, MySQL og PHP.
+Selve Linuxinstallationen vil jeg ikke komme ind på, da dette egentlig er en guide henvendt til Linuxbrugere, og jeg vil derfor antage at Linux allerede er installeret og virker. Desuden benyttes APT der er systemet til <a href="http://jesperjarlskov.dk/2008/programmer-via-linux-terminalen/">Programhåndtering i Ubuntu</a>. Guiden er altså henvendt til brugere at Ubuntu og de afarter der findes, og jeg vil gætte på at den også virker med storebroderen Debian, der også bruger APT, men ikke nødvendigvis på de mange andre Linuxversioner der findes.
+<h3>Installation af Apache</h3>
+Apache er selve webserveren. Det er den del der reagerer på forespørgsler udefra, og bestemmer hvordan de skal håndteres. Hver gang du går ind på en hjemmeside står der altså en webserver og bedømmer om du er kommet for at se en hjemmeside, eller for at sende en e-mail, eller noget helt tredje.
+Apacheserveren findes i Ubuntus standard repositories og kan derfor installeres fra terminalen med kommandoen:
+<blockquote>sudo aptitude install apache2</blockquote>
+Let og enkelt. Efter installationen er fuldført kan du åbne en browser og gå til <a href="http://localhost">localhost</a> som er standardadressen på din egen maskine, for at checke at det virker efter hensigten.
+som standard viser apache det website der findes i /var/www på din computer, så indtil videre kan du ændre i de filer der ligger her, eller ligge dit eget website her for at få det vist. Jeg vil senere komme en lille smule ind på hvordan man opsætter og styrer sin apacheserver.
+<h3>Installation af PHP5</h3>
+PHP er det "program" der oversætter PHP-kode til kode som computeren kan køre, og til sidst til kode som webserveren kan præsentere for den besøgende på siden. Dette findes selvfølgelig også i Ubuntus repositories, ydermere installerer vi "libapache2-mod-php5" som er et modul der sørger for at få din apacheserver til at virke sammen med PHP. Det er jo en fordel at tingene kan snakke sammen :-)
+<blockquote>sudo aptitude install php5 libapache2-mod-php5</blockquote>
+Herefter burde du kunne smide din PHP-kode i apache's standardbibliotek /var/www og se resultatet ved igen at tilgå <a href="http://localhost">localhost</a>.
+<h3>Installation af MySQL</h3>
+Det sidste vi skal have installeret er MySQL.
+Dette er en gratis Open Source database der pga. sin pris er et meget populært valg blandt PHP-programmører. Oftest vil de fleste webhosts der tilbyder PHP-hosting, tilbyde det sammen med adgang til en MySQL database, så jeg mener dette er et godt valg til projektet.
+Der er jo heller ingen grund til at gøre tingene sværere end højst nødvendigt, så MySQL findes selvfølgelig også i Ubuntus repositories. Databasen installeres altså vha.:
+<blockquote>sudo aptitude install mysql-server php5-mysql</blockquote>
+Under installationen vil du blive bedt om at udfylde kode til root-brugeren, dette kan klart anbefales da du ellers vil sidde med et gabende sikkerhedshul i din database.
+Herefter kan det anbefales at tilknytte nogle brugere og give dem adgang til databaserne enkeltvis, i stedet for hele tiden at bruge root-brugeren, men dette vil jeg komme ind på i næste afsnit af artiklen.
+Da PHP5 ikke er indstillet til nogen bestemt version af MySQL, på samme måde som PHP4 var, skal vi lige sørge for at PHP og MySQL kan arbejde sammen. Vi skal altså have PHP til rent faktisk at lede efter vores database. Dette gør vi ved at ændre i PHP.ini filen. Det er en almindelig tekstfil, så det kan klares med ethvert tekstediteringsprogram, jeg bruger nano:
+<blockquote>sudo nano /etc/php5/apache2/php.ini</blockquote>
+Find den del af filen der hedder "Dynamic Extension", og tilføj linjen:
+<blockquote>extension = mysql.so </blockquote>
+Så skulle PHP5 og MySQL kunne arbejde sammen. Hvis det ikke virker allerede nu, vil det nok hjælpe at genstarte Apacheserveren.
+<h2>Opsætning og sikkerhed</h2>
+Efter vi har fået installeret vores LAMP-server er det på tide med noget grundlæggende opsætning, og nogle få kommandoer til at styre serveren.
+<h3>Opsætning af Apache</h3>
+Apache's konfigurationsfil findes i /etc/apache2/apache2.conf
+Vi kan f.eks. åbne denne med terminalens skriveprogram "nano". Da det kun er root-brugeren der har skriveadgang til /etc skal vi huske sudo hvis vi skal ændre i filen.
+<blockquote>sudo nano /etc/apache2/apache2.conf</blockquote>
+I denne fil kan det meste af serverens opsætning ændres. Det skal man dog være lidt påpasselig med, da selv små fejl kan få hele serveren til at gå i gruset. Det kan derfor anbefales at man tager en back-up af filen inden man begynder at ændre i den. Det kan bl.a. gøres med
+<blockquote>sudo cp /etc/apache2/apache2.conf /etc/apache2/apache2.conf.backup</blockquote>
+Dette gemmer en backup i filen /etc/apache2/apache2.conf.backup . Hvis man så får lavet en fejl og ønsker at restore denne backup gøres det bare med:
+<blockquote>sudo cp /etc/apache2/apache2.conf.backup /etc/apache2/apache2.conf</blockquote><p>I denne fil kan man lave mange ændringer til serveren, man kan bl.a. sætte generiske fejlsider til 404-fejl (siden ikke fundet) osv.
+Hver gang man har lavet ændringer i konfigurationen skal serveren genstartes, man behøver heldigvis ikke genstarte hele maskinen, men kan nøjes med at genstarte apache med kommandoen:</p><blockquote>sudo /etc/init.d/apache2 restart</blockquote><p>På samme måde kan apache startes og stoppes efter behov med hhv.</p><blockquote>sudo /etc/init.d/apache2 start</blockquote>
+og
+<blockquote>sudo /etc/init.d/apache2 stop</blockquote><h3>Opsætning af MySQL</h3>
+Det er også værd at kigge lidt på hvordan ens database er sat op, jeg tænker her især på hvilke brugere der har adgang, og hvad de har adgang til osv.
+For at starte mysql programmet bruges bare
+<blockquote>mysql</blockquote>
+Fra starten af er der dog ikke mange muligheder, da det kun er root der har administratorrettigheder som standard. Flaget -u kan bruges til at starte mysql med en anden bruger end den man er logget på maskinen med, og hvis man satte et password under installationen (hvilket man forhåbentlig gjorde) bruges flaget -p til at vise at man ønsker at benytte password til logon. Så hvis du skal logge ind med root, og vha. et password skal du altså bruge
+<blockquote>mysql -u root -p</blockquote>
+Hvorefter du vil blive bedt om koden.
+Bemærk at terminalens normale "user@host:~$" udskiftes med "mysql&gt;" når mysql kører.
+Her kan du så vha. normal SQL oprette databaser og tildele rettigheder osv. for god ordens skyld gennemgår jeg lige det vigtigste.
+Da min plan er at lave en form for projekt management værktøj, laver jeg en database med et passende navn.
+<blockquote>create database projectmanager;</blockquote>
+Jeg vil så give brugeren "user" adgang. For god ordens skyld vælger jeg at der skal logges på med et kodeord, det sættes dog for eksemplets skyld til "password". Det skrives i mysql som:
+<blockquote>grant usage on *.* to user@localhost identified by 'password';</blockquote>
+"user" har nu adgang til mysql med koden password. Nu skal han bare have adgang til projectmanager-databasen. Det gøres med:
+<blockquote>grant all privileges on projectmanager.* to user@localhost;</blockquote>
+Nu har "user" altså ALLE rettigheder til den ene database.
+Hvis jeg så logger ud af mysql med:
+<blockquote>quit</blockquote>
+Kan jeg nu logge ind som user med kommandoen:
+<blockquote>mysql -u user -p</blockquote>
+og lege med databasen "projectmanager".
+<h2><b>Valgfri:</b>Installation af PHPMyAdmin</h2>
+Det er ikke alle der er lige glade for at håndkode deres SQL, og hvis man kun har MySQL-programmet som værktøj forstår jeg det udemærket godt. Der findes derfor et webbaseret userinterface til at administrere databaserne på databaseserveren, ved navn PHPMyAdmin. Jeg tror de fleste der har rodet med PHP og MySQL er bekendte med dette værktøj.
+Vi er så heldige at dette værktøj, ligesom alt andet man nogensinde får brug for ;-), findes i Ubuntu's repositories. Det installeres altså med:
+<blockquote>sudo aptitude install phpmyadmin</blockquote>
+Når det er installeret skal vi lige sørge for at apache kan finde det. Dette kræver at vi ændrer i apache's konfiguration, så igen åbner vi konfigurationsfilen i vores yndligs teksteditor, i dette tilfælde er nano dejligt belejligt. Husk super-user adgang (sudo).
+<blockquote>sudo nano /etc/apache2/apache2.conf</blockquote>
+Nederst i filen findes nogle linjer med henvisninger til forskellige biblioteker på maskinen som apache skal benytte sig af, altså inkludere. Hertil tilføjer vi phpmyadmin ved at tilføje linjen:
+<blockquote>Include /etc/phpmyadmin/apache.conf</blockquote>
+Herefter gemmer vi konfigurationen og restarter apache, og så skulle alt gerne spille.
+<p>Jeg håber det har været en brugbar artikel, og jeg håber på tid og mulighed for at skrive mere af samme skuffe i fremtiden. Forhåbentlig bliver der ikke så lang tid imellem mine indlæg som der hidtil har været.</p><p>Og husk, hvis du er kommet til at lave en fejl i den sidste del så apache nu ikke længere har lyst til at restarte, er det jo godt at du har taget backup af konfigurationen ;-)</p></div></article><footer></footer><nav class="post-navigation"><div class="previous"><a href="/2008-12-11-nywordpressversion.html">&laquo; Previous: Ny Wordpress Version</a></div><div class="next"><a href="/2009-01-28-asus-eee-box-som-debian-server.html">Next: Asus Eee Box som Debian server. &raquo;</a></div></nav></main><footer><p>&copy; 2026 Jesper Jarlskov</p></footer><script type="module">
+                    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+                    mermaid.initialize({ startOnLoad: true });
+                </script>    </body>
+</html>

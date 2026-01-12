@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                                            <title>Exporting from MySQL to CSV file | JesperJarlskov.dk</title>
+    <meta name="description" content="">
+    <meta name="author" content="Jesper Jarlskov">
+    <link rel="canonical" href="https://jesperjarlskov.dk//2017-01-18-exporting-mysql-csv-file.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jesperjarlskov.dk//2017-01-18-exporting-mysql-csv-file.html">
+    <meta property="og:title" content="Exporting from MySQL to CSV file">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://jesperjarlskov.dk//2017-01-18-exporting-mysql-csv-file.html">
+    <meta name="twitter:title" content="Exporting from MySQL to CSV file">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
+
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <header><nav><a href="/">Home</a><a href="/about.html">About</a><a href="/tags.html">Tags</a></nav></header><main><article><h1>Exporting from MySQL to CSV file</h1><p><small>Published on 2017-01-18 by Jesper Jarlskov</small></p><div><p>We often have to export data from MySQL to other applications; this could be to further analyse the data, gather user emails for a newsletter or similar. Usually these applications, CSV is probably the most common format for data exporting like this.</p><p>Luckily SQL select output, with its rows and columns, if well suited for CSV output.</p><p>You can easily export straight from the MySQL client to a CSV file, by appending the expected CSV format to the end of the query:</p><pre class="lang:mysql decode:true ">
+[SQL QUERY]
+INTO OUTFILE '[FILE]'
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+</pre><p>For example:</p><pre class="lang:mysql decode:true ">
+SELECT * FROM users
+INTO OUTFILE '/var/lib/mysql-files/users.csv'
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+</pre><p>The last three lines can be customised based on your needs.</p><p><b>NOTE:</b> The default MySQL settings only allows writing files to the <code>/var/lib/mysql-files/</code> directory.</p><p>If you do not have permissions to write files from the MySQL client, the same can be accomplished from the commandline:</p><pre class="lang:sh decode:true ">
+echo "[QUERY]"|mysql -u [DBUSER] -p [DBNAME]|sed s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > [FILE]
+</pre><p>For example:</p><pre class="lang:sh decode:true ">
+echo "SELECT * FROM users"|mysql -u my_user -p my_database|sed s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > users.csv
+</pre><p>The regex is, of course, courtesy <a href="http://stackoverflow.com/a/5395421/2217294">stackoverflow</a>.</p><blockquote cite="http://stackoverflow.com/questions/356578/how-to-output-mysql-query-results-in-csv-format">
+Regex Explanation:
+<p>s/// means substitute what's between the first // with what's between the second //
+the &quot;g&quot; at the end is a modifier that means &quot;all instance, not just first&quot;
+^ (in this context) means beginning of line
+$ (in this context) means end of line
+So, putting it all together:</p><p>s/'/'/          replace ' with '
+s/\t/&quot;,&quot;/g     replace all \t (tab) with &quot;,&quot;
+s/^/&quot;/          at the beginning of the line place a &quot;
+s/$/&quot;/          at the end of the line place a &quot;
+s/\n//g          replace all \n (newline) with nothing</p></blockquote></div></article><footer></footer><nav class="post-navigation"><div class="previous"><a href="/2016-12-30-eager-loading-n1-problem.html">&laquo; Previous: Lazy loading, eager loading and the n+1 problem</a></div><div class="next"><a href="/2017-02-01-january-2017-php.html">Next: January-2017.php &raquo;</a></div></nav></main><footer><p>&copy; 2026 Jesper Jarlskov</p></footer><script type="module">
+                    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+                    mermaid.initialize({ startOnLoad: true });
+                </script>    </body>
+</html>

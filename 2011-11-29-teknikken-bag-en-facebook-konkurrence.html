@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                                            <title>Teknikken bag en Facebook konkurrence | JesperJarlskov.dk</title>
+    <meta name="description" content="">
+    <meta name="author" content="Jesper Jarlskov">
+    <link rel="canonical" href="https://jesperjarlskov.dk//2011-11-29-teknikken-bag-en-facebook-konkurrence.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jesperjarlskov.dk//2011-11-29-teknikken-bag-en-facebook-konkurrence.html">
+    <meta property="og:title" content="Teknikken bag en Facebook konkurrence">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://jesperjarlskov.dk//2011-11-29-teknikken-bag-en-facebook-konkurrence.html">
+    <meta name="twitter:title" content="Teknikken bag en Facebook konkurrence">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
+
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <header><nav><a href="/">Home</a><a href="/about.html">About</a><a href="/tags.html">Tags</a></nav></header><main><article><h1>Teknikken bag en Facebook konkurrence</h1><p><small>Published on 2011-11-29 by Jesper Jarlskov</small></p><div><p>I sidste uge lancere min arbejdsplads en konkurrence hvor man kan vinde en skiferie. For at sprede ordet valgte vi bl.a. at dele konkurrencen på Facebook. I forbindelse med Facebookdelen rendte jeg ind i et par problemer som jeg havde svært ved at finde dokumenteret online. Konkurrencen blev oprettet som en facebook page app.</p><h2>Facebooksiden</h2>
+Facebooksiden i sig selv var ikke et stort problem. Jeg lavede en app på <a href="https://developers.facebook.com/apps">Facebook Developers</a> siden. Dette giver en række muligheder, bl.a. muligheden for at vælge hvordan din app skal integreres med Facebook.
+<p>For at kunne bruge applikationen som et element på en Facebook page, vælges &quot;page tab&quot;. Teknisk fungerer det ved at du selv hoster din app, som en almindelig html side, der så indlejres på din Facebook Page, i en iframe. En page tab har 4 indstillinger:</p><ul><li>Page Tab Name - Den navn din app skal have i page menuen</li><li>Page Tab URL - Den side Facebook skal integrere i sin iframe</li><li>Secure Page Tab URL - En HTTPS-version af den side der skal vises på Facebook</li><li>Page Tab Edit URL - Link til din app's admin modul. Jeg skippede dette, da mit projekt ikke havde behov for customization</li></ul>
+I følge Facebook selv har mere end 9.6mio brugere valgt kun at kunne tilgå Facebook via https. Hvis du ikke har tilføjet en HTTPS-version af din app vil alle de mennesker hverken kunne se eller bruge din app.
+<p>Et af de problemer jeg kæmpede mest med, var at gøre det muligt for folk at dele appen med deres venner. Ikke fordi det var svært rent kodemæssigt, men jeg fandt ud af at det kræver at appen udover at være oprettet som 'page tab' som forklaret ovenfor, også kræver at den er lavet som en normal 'app on facebook' (se billede ovenfor). Når du vælger 'app on facebook' får du 2 indstillingsmuligheder. Canvas URL, og Secure Canvas URL. Et Facebook app canvas fungerer på samme måde som en Facebook page tab, bortset fra at det er en selvstændig app, og ikke tilknyttet en page. Da jeg ikke havde brug for en selvstændig app valgte jeg at lave mine canvas URLs pege på en tom side, der kun bestod af et JavaScript redirect, til min page tab.</p><h2>Selve appen</h2>
+Da opsætningen var på plads var der bare tilbage at lave selve appen. Det sker som nævnt tidligere vha. html, css og javascript, og der er altså ikke meget magi her. For at få adgang til Facebooks funktionalitet, skal Facebook SDK'et loades.
+<pre lang="Javascript" line="1" escaped="false"><div id="fb-root"></div><script>
+	(function(d){
+		var js, id = 'facebook-jssdk'; 
+		if (d.getElementById(id)) {return;}
+		js = d.createElement('script'); 
+		js.id = id; 
+		js.async = true;
+		js.src = d.location.protocol + "//connect.facebook.net/en_US/all.js";
+		d.getElementsByTagName('head')[0].appendChild(js);
+	}(document));
+<pre><code>window.fbAsyncInit = function() {
+	FB.init({
+		appId: 'YOUR-APP-ID',
+		status: true,
+		cookie: true,
+		xfbml: true,
+	});
+}
+</code></pre></script></pre>
+Linjen:
+<pre lang="JavaScript" line="1">
+js.src = d.location.protocol + "//connect.facebook.net/en_US/all.js";
+</pre>
+kan bruges til at styre hvilket sprog Facebooks ting skal vises på. Tilgængelige sprog kan findes i <a href="http://www.facebook.com/translations/FacebookLocales.xml">Facebook's Locale XML</a>.
+<p>Nu er der adgang til Facebooks funktionalitet via. Javascript. I dette projekt blev det brug til 2 ting. Først skal der være mulighed for at folk kan dele appen med deres venner:</p><pre lang="Javascript" line="1">
+function tellafriend() {
+	FB.ui({
+		method: 'apprequests',
+		message: 'Hvilken besked skal folk sende til deres venner?',
+		title: 'Overskrift.'
+	}, function (response) {
+		poststory();
+	});
+}
+</pre><p>Den sidste del:</p><pre lang="Javascript" line="1">
+function (response) {
+	poststory();
+}
+</pre><p>Sørger selvfølgelig for at funktionen poststory() kaldes så snart folk har valgt hvem af deres venner de gerne vil dele appen med. Det er også muligt at trykke cancel og på den måde ikke dele med nogen, poststory() vil dog stadig blive kaldt.
+Formålet med poststory() er at lade folk poste et link til appen på deres egen væg:</p><pre lang="Javascript" line="1">
+function poststory() {
+	FB.ui({
+		method: 'feed',
+		name: 'Overskrift på vægopslaget',
+		link: 'Link der skal deles',
+		picture: 'link til billede der skal inkluderes på opslaget',
+		caption: 'Billedetekst.',
+		description: 'Brødtekst på indlægget'
+	}, function(response) {
+		redirectuser();
+	});
+}
+</pre><p>Efter poststory() kaldes funktionen redirectuser(), som vha. et normalt Javascript redirect videresender brugeren til vores egen konkurrenceside.</p><p>Jeg håber indlægget kan hjælpe med at komme udenom nogen af de små fælder jeg selv rendte ind i :-)
+Husk i forbindelse med konkurrencer at overholde Facebook's egne regler for konkurrencer. Ellers kan det blive en kort fornøjelse. Kasper Blom har skrevet en god kort <a href="http://casperblom.dk/facebook-konkurrence-regler-opsumering/">opsummering af konkurrencereglerne</a>.</p></div></article><footer></footer><nav class="post-navigation"><div class="previous"><a href="/2011-11-20-wordpress-danmark-og-wordpress-pa-dansk.html">&laquo; Previous: WordPress Danmark og WordPress på dansk</a></div><div class="next"><a href="/2011-12-27-tillykke-med-de-100-000-ubuntudanmark.html">Next: Tillykke med de 100.000, Ubuntudanmark! &raquo;</a></div></nav></main><footer><p>&copy; 2026 Jesper Jarlskov</p></footer><script type="module">
+                    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+                    mermaid.initialize({ startOnLoad: true });
+                </script>    </body>
+</html>

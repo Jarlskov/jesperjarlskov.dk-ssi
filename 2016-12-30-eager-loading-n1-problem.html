@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                                            <title>Lazy loading, eager loading and the n+1 problem | JesperJarlskov.dk</title>
+    <meta name="description" content="">
+    <meta name="author" content="Jesper Jarlskov">
+    <link rel="canonical" href="https://jesperjarlskov.dk//2016-12-30-eager-loading-n1-problem.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jesperjarlskov.dk//2016-12-30-eager-loading-n1-problem.html">
+    <meta property="og:title" content="Lazy loading, eager loading and the n+1 problem">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://jesperjarlskov.dk//2016-12-30-eager-loading-n1-problem.html">
+    <meta name="twitter:title" content="Lazy loading, eager loading and the n+1 problem">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
+
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <header><nav><a href="/">Home</a><a href="/about.html">About</a><a href="/tags.html">Tags</a></nav></header><main><article><h1>Lazy loading, eager loading and the n+1 problem</h1><p><small>Published on 2016-12-30 by Jesper Jarlskov</small></p><div><p>In this article I'll look into a few data loading strategies, namely:</p><ul><li><a href="#lazyloading">Lazy loading</a></li><li><a href="#eagerloading">Eager loading</a></li><li><a href="#lazyeagerloading">Lazy-eager loading</a></li></ul><p>I'll talk a bit about the pros and cons of each strategy, and common issues developers might run into. Especially the n+1 problem, and how to mitigate it.</p><p>The examples in the post are written using PHP and Laravel syntax, but the idea is the same for any language.</p><h2 id="lazyloading">Lazy Loading</h2>
+The first loading strategy is probably the most basic one. Lazy loading means postponing loading data until the time where you actually need it.
+<pre class="lang:php decode:true " title="Lazy loading in action" >
+$users = App\User::get();
+foreach ($users as $user) {
+    $user-&gt;load('posts');
+    echo $users-&gt;posts()-&gt;count();
+}
+</pre><p>Lazy loading has the advantage that you will only load the data you actually need.</p><h3>The n+1 problem</h3>
+The problem is with lazy loading is what is known as the n+1 problem. Because the data is loaded for each user independently, n+1 database queries is required, where n is the number of users. If you only have a few users this will likely not be a problem, but this means that performance will degrade quickly when the number of users grows.
+<h2 id="eagerloading">Eager Loading</h2>
+In the eager loading strategy, data loading is moved to an earlier part of the code.
+<pre class="lang:php decode:true " title="Eager loading in action">
+$users = App\User::with('posts')-&gt;get();
+foreach ($users as $user) {
+    echo $user-&gt;posts-&gt;count();
+}
+</pre><p>This will solve the n+1 problem. Since all data is fetched using a single query, the number of queries is independent of the number of items fetched.</p><p>One problem with eager loading is that you might end up loading more data than you actually need.</p><p>Often data is fetched in a controller and used in a view, in this case, the two will become very tightly coupled, and every time the data requirements of the view changes, the controller needs to change as well requiring maintenance in several different places.</p><h2 id="lazyeagerloading">Lazy-eager loading</h2>
+The lazy-eager loading combines both of the strategies above; loading of data is postponed until it is required, but it is still being prepared beforehand. Let's see an example.
+<pre class="lang:php decode:true">
+$users = App\User::get();
+$users-&gt;load('posts');
+foreach ($users as $user) {
+    echo $users-&gt;posts-&gt;count();
+}
+</pre><p>As usual, a simple example like this only shows part of the story, but the <code>$users</code> list would usually be loaded in a controller, away from the iterator.</p><p>In this case, we're keeping related code close together which means you'll likely have fewer places to go to handle maintenance, but since the data is often required in templates we might be introducing logic into our templates giving the template more responsibilities. This can both make maintenance and performance testing harder.</p><h2>Which strategy to choose?</h2>
+This article has introduced three different data loading strategies, namely; <a href="#lazyloading">lazy loading</a>, <a href="#eagerloading">eager loading</a> and <a href="#lazyeagerloading">lazy-eager loading</a>.
+<p>I've tried to outline som pros and cons of each strategy, as well as some of the issues related to each of them.</p><p>Which strategy to choose depends on the problem you're trying to solve, since each strategy might make sense in their own cases.</p><p>As with most other problems I'd usually start by implementing whichever strategy is simplest and fastest to implement, to create a PoC of a solution to my problem. Afterwards I'd go through a range of performance tests, to see where the bottlenecks in my solution appears, and then look into which alternate strategy will solve that bottleneck.</p></div></article><footer></footer><nav class="post-navigation"><div class="previous"><a href="/2016-12-28-http2-what-and-why.html">&laquo; Previous: HTTP/2 - What and why?</a></div><div class="next"><a href="/2017-01-18-exporting-mysql-csv-file.html">Next: Exporting from MySQL to CSV file &raquo;</a></div></nav></main><footer><p>&copy; 2026 Jesper Jarlskov</p></footer><script type="module">
+                    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+                    mermaid.initialize({ startOnLoad: true });
+                </script>    </body>
+</html>
