@@ -14,10 +14,10 @@
             <meta property="og:title" content="{{ site.siteTitle }}">
             <meta property="og:image" content="{{ site.baseUrl }}{{ site.defaultSocialImage }}">
             <meta property="og:type" content="website">
-            <meta property="og:url" content="{{ site.baseUrl }}/">
+            <meta property="og:url" content="{{ site.baseUrl }}">
         {% endblock meta_tags %}
 
-        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="{{ site.baseUrl }}assets/css/style.css">
     </head>
     <body>
         {% apply spaceless %}

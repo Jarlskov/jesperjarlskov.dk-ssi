@@ -16,12 +16,12 @@
         <ul>
             {% for post in posts %}
                 <li>
-                    <h3><a href="/{{ post.slug }}.html">{{ post.title }}</a></h3>
+                    <h3><a href="{{ site.baseUrl }}{{ post.slug }}.html">{{ post.title }}</a></h3>
                     <p><small>Published on {{ post.date|date("Y-m-d") }} by {{ site.author }}</small></p>
                     <p>{{ post.description }}</p>
                 </li>
             {% endfor %}
         </ul>
     {% endif %}
-    <p><a href="/tags.html">View all tags</a></p>
+    <p><a href="{{ site.baseUrl }}tags.html">View all tags</a></p>
 {% endblock content %}
