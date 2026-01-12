@@ -7,26 +7,26 @@
                                             <title>Lazy loading, eager loading and the n+1 problem | JesperJarlskov.dk</title>
     <meta name="description" content="">
     <meta name="author" content="Jesper Jarlskov">
-    <link rel="canonical" href="https://jarlskov.github.io/jesperjarlskov.dk-ssi//2016-12-30-eager-loading-n1-problem.html">
+    <link rel="canonical" href="https://jesperjarlskov.dk//2016-12-30-eager-loading-n1-problem.html">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://jarlskov.github.io/jesperjarlskov.dk-ssi//2016-12-30-eager-loading-n1-problem.html">
+    <meta property="og:url" content="https://jesperjarlskov.dk//2016-12-30-eager-loading-n1-problem.html">
     <meta property="og:title" content="Lazy loading, eager loading and the n+1 problem">
     <meta property="og:description" content="">
-    <meta property="og:image" content="https://jarlskov.github.io/jesperjarlskov.dk-ssi//assets/images/default-social.jpg">
+    <meta property="og:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://jarlskov.github.io/jesperjarlskov.dk-ssi//2016-12-30-eager-loading-n1-problem.html">
+    <meta name="twitter:url" content="https://jesperjarlskov.dk//2016-12-30-eager-loading-n1-problem.html">
     <meta name="twitter:title" content="Lazy loading, eager loading and the n+1 problem">
     <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="https://jarlskov.github.io/jesperjarlskov.dk-ssi//assets/images/default-social.jpg">
+    <meta name="twitter:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
 
-        <link rel="stylesheet" href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/assets/css/style.css">
+        <link rel="stylesheet" href="https://jesperjarlskov.dk/assets/css/style.css">
     </head>
     <body>
-        <header><nav><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/">Home</a><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/about.html">About</a><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/tags.html">Tags</a></nav></header><main><article><h1>Lazy loading, eager loading and the n+1 problem</h1><p><small>Published on 2016-12-30 by Jesper Jarlskov</small></p><div><p>In this article I'll look into a few data loading strategies, namely:</p><ul><li><a href="#lazyloading">Lazy loading</a></li><li><a href="#eagerloading">Eager loading</a></li><li><a href="#lazyeagerloading">Lazy-eager loading</a></li></ul><p>I'll talk a bit about the pros and cons of each strategy, and common issues developers might run into. Especially the n+1 problem, and how to mitigate it.</p><p>The examples in the post are written using PHP and Laravel syntax, but the idea is the same for any language.</p><h2 id="lazyloading">Lazy Loading</h2>
+        <header><nav><a href="https://jesperjarlskov.dk/">Home</a><a href="https://jesperjarlskov.dk/about.html">About</a><a href="https://jesperjarlskov.dk/tags.html">Tags</a></nav></header><main><article><h1>Lazy loading, eager loading and the n+1 problem</h1><p><small>Published on 2016-12-30 by Jesper Jarlskov</small></p><div><p>In this article I'll look into a few data loading strategies, namely:</p><ul><li><a href="#lazyloading">Lazy loading</a></li><li><a href="#eagerloading">Eager loading</a></li><li><a href="#lazyeagerloading">Lazy-eager loading</a></li></ul><p>I'll talk a bit about the pros and cons of each strategy, and common issues developers might run into. Especially the n+1 problem, and how to mitigate it.</p><p>The examples in the post are written using PHP and Laravel syntax, but the idea is the same for any language.</p><h2 id="lazyloading">Lazy Loading</h2>
 The first loading strategy is probably the most basic one. Lazy loading means postponing loading data until the time where you actually need it.
 <pre class="lang:php decode:true " title="Lazy loading in action" >
 $users = App\User::get();
@@ -53,7 +53,7 @@ foreach ($users as $user) {
 }
 </pre><p>As usual, a simple example like this only shows part of the story, but the <code>$users</code> list would usually be loaded in a controller, away from the iterator.</p><p>In this case, we're keeping related code close together which means you'll likely have fewer places to go to handle maintenance, but since the data is often required in templates we might be introducing logic into our templates giving the template more responsibilities. This can both make maintenance and performance testing harder.</p><h2>Which strategy to choose?</h2>
 This article has introduced three different data loading strategies, namely; <a href="#lazyloading">lazy loading</a>, <a href="#eagerloading">eager loading</a> and <a href="#lazyeagerloading">lazy-eager loading</a>.
-<p>I've tried to outline som pros and cons of each strategy, as well as some of the issues related to each of them.</p><p>Which strategy to choose depends on the problem you're trying to solve, since each strategy might make sense in their own cases.</p><p>As with most other problems I'd usually start by implementing whichever strategy is simplest and fastest to implement, to create a PoC of a solution to my problem. Afterwards I'd go through a range of performance tests, to see where the bottlenecks in my solution appears, and then look into which alternate strategy will solve that bottleneck.</p></div></article><footer></footer><nav class="post-navigation"><div class="previous"><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/2016-12-28-http2-what-and-why.html">&laquo; Previous: HTTP/2 - What and why?</a></div><div class="next"><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/2017-01-18-exporting-mysql-csv-file.html">Next: Exporting from MySQL to CSV file &raquo;</a></div></nav></main><footer><p>&copy; 2026 Jesper Jarlskov</p></footer><script type="module">
+<p>I've tried to outline som pros and cons of each strategy, as well as some of the issues related to each of them.</p><p>Which strategy to choose depends on the problem you're trying to solve, since each strategy might make sense in their own cases.</p><p>As with most other problems I'd usually start by implementing whichever strategy is simplest and fastest to implement, to create a PoC of a solution to my problem. Afterwards I'd go through a range of performance tests, to see where the bottlenecks in my solution appears, and then look into which alternate strategy will solve that bottleneck.</p></div></article><footer></footer><nav class="post-navigation"><div class="previous"><a href="https://jesperjarlskov.dk/2016-12-28-http2-what-and-why.html">&laquo; Previous: HTTP/2 - What and why?</a></div><div class="next"><a href="https://jesperjarlskov.dk/2017-01-18-exporting-mysql-csv-file.html">Next: Exporting from MySQL to CSV file &raquo;</a></div></nav></main><footer><p>&copy; 2026 Jesper Jarlskov</p></footer><script type="module">
                     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
                     mermaid.initialize({ startOnLoad: true });
                 </script>    </body>
