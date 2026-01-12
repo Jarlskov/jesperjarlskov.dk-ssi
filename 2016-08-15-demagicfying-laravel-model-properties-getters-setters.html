@@ -7,26 +7,26 @@
                                             <title>Demagicfying Laravel: Model properties; getters and setters | JesperJarlskov.dk</title>
     <meta name="description" content="">
     <meta name="author" content="Jesper Jarlskov">
-    <link rel="canonical" href="https://jesperjarlskov.dk//2016-08-15-demagicfying-laravel-model-properties-getters-setters.html">
+    <link rel="canonical" href="https://jarlskov.github.io/jesperjarlskov.dk-ssi//2016-08-15-demagicfying-laravel-model-properties-getters-setters.html">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://jesperjarlskov.dk//2016-08-15-demagicfying-laravel-model-properties-getters-setters.html">
+    <meta property="og:url" content="https://jarlskov.github.io/jesperjarlskov.dk-ssi//2016-08-15-demagicfying-laravel-model-properties-getters-setters.html">
     <meta property="og:title" content="Demagicfying Laravel: Model properties; getters and setters">
     <meta property="og:description" content="">
-    <meta property="og:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
+    <meta property="og:image" content="https://jarlskov.github.io/jesperjarlskov.dk-ssi//assets/images/default-social.jpg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://jesperjarlskov.dk//2016-08-15-demagicfying-laravel-model-properties-getters-setters.html">
+    <meta name="twitter:url" content="https://jarlskov.github.io/jesperjarlskov.dk-ssi//2016-08-15-demagicfying-laravel-model-properties-getters-setters.html">
     <meta name="twitter:title" content="Demagicfying Laravel: Model properties; getters and setters">
     <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
+    <meta name="twitter:image" content="https://jarlskov.github.io/jesperjarlskov.dk-ssi//assets/images/default-social.jpg">
 
-        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/assets/css/style.css">
     </head>
     <body>
-        <header><nav><a href="/">Home</a><a href="/about.html">About</a><a href="/tags.html">Tags</a></nav></header><main><article><h1>Demagicfying Laravel: Model properties; getters and setters</h1><p><small>Published on 2016-08-15 by Jesper Jarlskov</small></p><div><p>I mostly enjoy working with Laravel. It provides a range of tools that makes it really fast to create a proof of concept of an idea, allowing you to test out your ideas without spending too much time on ideas before knowing if they are actually worth spending time on.</p><p>When you're starting out with Laravel a lot of what's going on behind the scene can feel like magic. This is really nice in the sense that you don't often have to worry about what is actually going on, but on the other hand, it can make things pretty hard to debug, it is not clear what is causing a bug when you're not sure what is going.</p><p>In this post I'll look into Eloquent models' object properties, and how Laravel's Eloquent ORM handles getting and setting property values.</p><h2>Table of content</h2><ul><li><a href="#setting-up">Setting up</a></li><li><a href="#getters">Getting object properties</a></li><li><a href="#setters">Setting object properties</a></li><li><a href="#summary">Summary</a></li><li><a href="#pitfalls">Common pitfalls</a></li></ul><h2 id="setting-up">Setting up</h2><p>To have an example to work with, we'll start by setting up a database table for a simple Todolist.</p><pre lang="shell">
+        <header><nav><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/">Home</a><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/about.html">About</a><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/tags.html">Tags</a></nav></header><main><article><h1>Demagicfying Laravel: Model properties; getters and setters</h1><p><small>Published on 2016-08-15 by Jesper Jarlskov</small></p><div><p>I mostly enjoy working with Laravel. It provides a range of tools that makes it really fast to create a proof of concept of an idea, allowing you to test out your ideas without spending too much time on ideas before knowing if they are actually worth spending time on.</p><p>When you're starting out with Laravel a lot of what's going on behind the scene can feel like magic. This is really nice in the sense that you don't often have to worry about what is actually going on, but on the other hand, it can make things pretty hard to debug, it is not clear what is causing a bug when you're not sure what is going.</p><p>In this post I'll look into Eloquent models' object properties, and how Laravel's Eloquent ORM handles getting and setting property values.</p><h2>Table of content</h2><ul><li><a href="#setting-up">Setting up</a></li><li><a href="#getters">Getting object properties</a></li><li><a href="#setters">Setting object properties</a></li><li><a href="#summary">Summary</a></li><li><a href="#pitfalls">Common pitfalls</a></li></ul><h2 id="setting-up">Setting up</h2><p>To have an example to work with, we'll start by setting up a database table for a simple Todolist.</p><pre lang="shell">
 php artisan make:migration create_todolists_table --create=todolists
 </pre><p>The Todolist is pretty simple, it has a unique auto-incrementing ID, a string name, a text description, and Eloquent's default timestamps. The most interesting part of the migration file is the <code>up()</code> method, where we define the table.</p><pre>
 // Class definitions
@@ -331,7 +331,7 @@ public function setNameAttribute($value)
 </pre><p>In this example the value will never be saved to the database, and cannot be read using an accessor.</p><pre>
 $list->name = 'My new list';
 echo $list->name;
-</pre><p>The example will echo an empty string.</p></div></article><footer></footer><nav class="post-navigation"><div class="previous"><a href="/2016-03-09-front-controller-design-pattern.html">&laquo; Previous: Front Controller design pattern</a></div><div class="next"><a href="/2016-08-29-wrapping-laracon-eu-2016.html">Next: Wrapping up Laracon EU 2016 &raquo;</a></div></nav></main><footer><p>&copy; 2026 Jesper Jarlskov</p></footer><script type="module">
+</pre><p>The example will echo an empty string.</p></div></article><footer></footer><nav class="post-navigation"><div class="previous"><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/2016-03-09-front-controller-design-pattern.html">&laquo; Previous: Front Controller design pattern</a></div><div class="next"><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/2016-08-29-wrapping-laracon-eu-2016.html">Next: Wrapping up Laracon EU 2016 &raquo;</a></div></nav></main><footer><p>&copy; 2026 Jesper Jarlskov</p></footer><script type="module">
                     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
                     mermaid.initialize({ startOnLoad: true });
                 </script>    </body>

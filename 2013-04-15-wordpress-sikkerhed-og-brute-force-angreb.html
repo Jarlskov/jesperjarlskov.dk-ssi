@@ -7,26 +7,26 @@
                                             <title>WordPress-sikkerhed og brute force angreb | JesperJarlskov.dk</title>
     <meta name="description" content="">
     <meta name="author" content="Jesper Jarlskov">
-    <link rel="canonical" href="https://jesperjarlskov.dk//2013-04-15-wordpress-sikkerhed-og-brute-force-angreb.html">
+    <link rel="canonical" href="https://jarlskov.github.io/jesperjarlskov.dk-ssi//2013-04-15-wordpress-sikkerhed-og-brute-force-angreb.html">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://jesperjarlskov.dk//2013-04-15-wordpress-sikkerhed-og-brute-force-angreb.html">
+    <meta property="og:url" content="https://jarlskov.github.io/jesperjarlskov.dk-ssi//2013-04-15-wordpress-sikkerhed-og-brute-force-angreb.html">
     <meta property="og:title" content="WordPress-sikkerhed og brute force angreb">
     <meta property="og:description" content="">
-    <meta property="og:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
+    <meta property="og:image" content="https://jarlskov.github.io/jesperjarlskov.dk-ssi//assets/images/default-social.jpg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://jesperjarlskov.dk//2013-04-15-wordpress-sikkerhed-og-brute-force-angreb.html">
+    <meta name="twitter:url" content="https://jarlskov.github.io/jesperjarlskov.dk-ssi//2013-04-15-wordpress-sikkerhed-og-brute-force-angreb.html">
     <meta name="twitter:title" content="WordPress-sikkerhed og brute force angreb">
     <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="https://jesperjarlskov.dk//assets/images/default-social.jpg">
+    <meta name="twitter:image" content="https://jarlskov.github.io/jesperjarlskov.dk-ssi//assets/images/default-social.jpg">
 
-        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/assets/css/style.css">
     </head>
     <body>
-        <header><nav><a href="/">Home</a><a href="/about.html">About</a><a href="/tags.html">Tags</a></nav></header><main><article><h1>WordPress-sikkerhed og brute force angreb</h1><p><small>Published on 2013-04-15 by Jesper Jarlskov</small></p><div><p>Der er i øjeblikket <a href="http://krebsonsecurity.com/2013/04/brute-force-attacks-build-wordpress-botnet/">mange</a><a href="http://www.techweekeurope.co.uk/news/wordpress-brute-force-botnet-security-113116">der</a><a href="http://it.slashdot.org/story/13/04/12/1940248/wordpress-sites-under-wide-scale-brute-force-attack">taler</a> om et botnet der på nuværende tidspunkt skulle være i gang med at brute force sig adgang til WordPress sites overalt. Der skulle efter sigende være tale om et angreb fra op til 90.000 forskellige kilder.</p><p>Om et sådan angreb er i gang eller ej skal jeg ikke kunne sige, men det har tilsyneladende fået rigtig mange WordPressbrugere til at genoverveje deres nuværende sikkerhedsniveau, så noget positivt er der da kommet ud af det lige meget hvad.</p><p>Jeg ser mange der diskuterer problemet og mulige løsninger, hvilket igen er positivt, men der er mange der ikke har helt styr på hvad der er godt og skidt, og evt. hvorfor, så jeg vil her prøve at give mit bud på nogle overvejelser man bør gøre sig inden man hovedløst kaster sig ud i installation af tilfældige sikkerhedsplugins.</p><p>En række supportere på det officielle <a href="http://wordpress.org/support/">WordPress support forum</a> har sammen lavet en side på WordPress codex med <a href="http://codex.wordpress.org/Brute_Force_Attacks">tips og tricks til at sikre sig mod angrebet</a>, så hvis du vil have den korte version på engelsk kan den findes her. Jeg vil gå lidt mere i dybden og forsøge at forklare det hele på dansk.</p><h2>Hvad sker der egentlig?</h2>
+        <header><nav><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/">Home</a><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/about.html">About</a><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/tags.html">Tags</a></nav></header><main><article><h1>WordPress-sikkerhed og brute force angreb</h1><p><small>Published on 2013-04-15 by Jesper Jarlskov</small></p><div><p>Der er i øjeblikket <a href="http://krebsonsecurity.com/2013/04/brute-force-attacks-build-wordpress-botnet/">mange</a><a href="http://www.techweekeurope.co.uk/news/wordpress-brute-force-botnet-security-113116">der</a><a href="http://it.slashdot.org/story/13/04/12/1940248/wordpress-sites-under-wide-scale-brute-force-attack">taler</a> om et botnet der på nuværende tidspunkt skulle være i gang med at brute force sig adgang til WordPress sites overalt. Der skulle efter sigende være tale om et angreb fra op til 90.000 forskellige kilder.</p><p>Om et sådan angreb er i gang eller ej skal jeg ikke kunne sige, men det har tilsyneladende fået rigtig mange WordPressbrugere til at genoverveje deres nuværende sikkerhedsniveau, så noget positivt er der da kommet ud af det lige meget hvad.</p><p>Jeg ser mange der diskuterer problemet og mulige løsninger, hvilket igen er positivt, men der er mange der ikke har helt styr på hvad der er godt og skidt, og evt. hvorfor, så jeg vil her prøve at give mit bud på nogle overvejelser man bør gøre sig inden man hovedløst kaster sig ud i installation af tilfældige sikkerhedsplugins.</p><p>En række supportere på det officielle <a href="http://wordpress.org/support/">WordPress support forum</a> har sammen lavet en side på WordPress codex med <a href="http://codex.wordpress.org/Brute_Force_Attacks">tips og tricks til at sikre sig mod angrebet</a>, så hvis du vil have den korte version på engelsk kan den findes her. Jeg vil gå lidt mere i dybden og forsøge at forklare det hele på dansk.</p><h2>Hvad sker der egentlig?</h2>
 For god ordens skyld vil jeg lige starte med at forklare det egentlige problem, så vi allesammen snakker om de samme ting, og for at give en idé om de overvejelser man bør gøre sig.
 <h3>Botnets? What?</h3>
 Det omtalte angreb stammer fra et stort botnet. Et botnet er et antal computere der, for det meste uden at ejeren ved det, bliver brugt af tredjepart til andre formål end hvad ejeren af computeren havde til hensigt.
@@ -58,7 +58,7 @@ Så for at opsummere hvad jeg mener du bør gøre for at højne din WordPress-si
 <ol><li>Hold WordPress opdateret, inkl.
 <ul><li>WordPress core</li><li>Alle installerede plugins</li><li>Alle installerede temaer</li></ul><li>Tag backup. Om ikke andet for at gøre det lettere at komme tilbage på benene hvis uheldet skulle være ude.</li><li>Lad være med at have en adminbruger med navnet admin.</li><li>Brug ordentlige passwords. Brug evt. en passwordmanager.</li><li>Passwordbeskyt din loginside.</li><li>Bloker adgangen for IP-adresser der prøver at gætte dit password.</li></ol>
 Hvis i har andre gode råd til beskyttelse af WordPress hører jeg selvfølgelig også gerne om det i kommentarfeltet nedenfor, så vi kan få spredt ordet om ordentlig sikkerhed (At lade være med at bruge WordPress godtages ikke som et godt råd, så hvis det er din mission, så spar dig selv besværet og lad være med at skrive det her).
-</div></article><footer></footer><nav class="post-navigation"><div class="previous"><a href="/2013-04-03-aprils-30-dages-udfordring.html">&laquo; Previous: Aprils 30-dages udfordring</a></div><div class="next"><a href="/2013-06-15-opsummering-af-aprils-30-dages-udfordring.html">Next: Opsummering af Aprils 30-dages udfordring &raquo;</a></div></nav></main><footer><p>&copy; 2026 Jesper Jarlskov</p></footer><script type="module">
+</div></article><footer></footer><nav class="post-navigation"><div class="previous"><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/2013-04-03-aprils-30-dages-udfordring.html">&laquo; Previous: Aprils 30-dages udfordring</a></div><div class="next"><a href="https://jarlskov.github.io/jesperjarlskov.dk-ssi/2013-06-15-opsummering-af-aprils-30-dages-udfordring.html">Next: Opsummering af Aprils 30-dages udfordring &raquo;</a></div></nav></main><footer><p>&copy; 2026 Jesper Jarlskov</p></footer><script type="module">
                     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
                     mermaid.initialize({ startOnLoad: true });
                 </script>    </body>
