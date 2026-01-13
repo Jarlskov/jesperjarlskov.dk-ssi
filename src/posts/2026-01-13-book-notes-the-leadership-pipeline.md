@@ -2,8 +2,7 @@
 title: 'Book notes: The Leadership Pipeline'
 date: 2026-01-13
 ---
-
-The leadership pipeline describes 6 major career passages in a leadership career. It describes the different leadership levels in a corporation and the main responsibilities of a leader at any level in the pipeline.
+[The leadership pipeline](https://www.amazon.com/Leadership-Pipeline-Build-Powered-Company/dp/0787951722) describes 6 major career passages in a leadership career. It describes the different leadership levels in a corporation and the main responsibilities of a leader at any level in the pipeline.
 
 This article is my personal notes from reading the book. I'll give an overview of all parts of the book, but my main takeaways are from the part about the career passages, namely the first 3 passages, so that'll be the main focus point here.
 
