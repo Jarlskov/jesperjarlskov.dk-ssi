@@ -144,25 +144,6 @@ class Generator
         $this->renderPosts();
         $this->renderTags();
         $this->renderIndex();
-        $this->renderFeeds();
-    }
-
-    private function renderFeeds(): void
-    {
-        echo "Rendering feeds...\n";
-        $distDir = $this->baseDir . '/dist';
-        
-        // RSS
-        file_put_contents($distDir . '/rss.xml', $this->twig->render('rss.xml.twig', [
-            'posts' => $this->posts
-        ]));
-        echo "  - Rendered rss.xml\n";
-
-        // Atom
-        file_put_contents($distDir . '/atom.xml', $this->twig->render('atom.xml.twig', [
-            'posts' => $this->posts
-        ]));
-        echo "  - Rendered atom.xml\n";
     }
 
     private function renderPages(): void
