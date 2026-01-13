@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>JesperJarlskov.dk</title>
+    <description>Personal blog of Jesper Jarlskov about technology, programming, and life.</description>
+    <link>https://jesperjarlskov.dk/</link>
+    <atom:link href="https://jesperjarlskov.dk/rss.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <lastBuildDate>Tue, 13 Jan 2026 08:33:23 +0000</lastBuildDate>
+    <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+    <ttl>1800</ttl>
+
+        <item>
+        <title>Book notes: How to Win Friends and Influence People</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2018-08-01-book-notes-how-to-win-friends-and-influence-people-1.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2018-08-01-book-notes-how-to-win-friends-and-influence-people-1.html</guid>
+        <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>February-2018.php</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2018-03-08-february-2018-php.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2018-03-08-february-2018-php.html</guid>
+        <pubDate>Thu, 08 Mar 2018 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Upgrading WordPress from the terminal</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2018-02-26-upgrading-wordpress-from-the-terminal.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2018-02-26-upgrading-wordpress-from-the-terminal.html</guid>
+        <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Race conditions</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2018-02-08-race-conditions.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2018-02-08-race-conditions.html</guid>
+        <pubDate>Thu, 08 Feb 2018 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>January-2018.php</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2018-02-02-january-2018-php.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2018-02-02-january-2018-php.html</guid>
+        <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>December-2017.php</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2018-01-02-december-2017-php.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2018-01-02-december-2017-php.html</guid>
+        <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>November-2017.php</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2017-12-01-november-2017-php.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2017-12-01-november-2017-php.html</guid>
+        <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>October-2017.php</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2017-11-02-october-2017-php.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2017-11-02-october-2017-php.html</guid>
+        <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>September-2017.php</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2017-10-02-september-2017-php.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2017-10-02-september-2017-php.html</guid>
+        <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>August-2017.php</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2017-08-31-august-2017-php.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2017-08-31-august-2017-php.html</guid>
+        <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>July-2017.php</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2017-08-07-july-2017-php.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2017-08-07-july-2017-php.html</guid>
+        <pubDate>Mon, 07 Aug 2017 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>June-2017.php</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2017-07-03-june-2017-php.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2017-07-03-june-2017-php.html</guid>
+        <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>May-2017.php</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2017-06-01-may-2017-php.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2017-06-01-may-2017-php.html</guid>
+        <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>April-2017.php</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2017-04-28-april-2017-php.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2017-04-28-april-2017-php.html</guid>
+        <pubDate>Fri, 28 Apr 2017 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>March-2017.php</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2017-03-31-march-2017-php.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2017-03-31-march-2017-php.html</guid>
+        <pubDate>Fri, 31 Mar 2017 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>February-2017.php</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2017-02-28-february-2017-php.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2017-02-28-february-2017-php.html</guid>
+        <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Laravel file logging based on severity</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2017-02-23-laravel-file-logging-based-severity.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2017-02-23-laravel-file-logging-based-severity.html</guid>
+        <pubDate>Thu, 23 Feb 2017 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>HTTPS and HTTP/2 with letsencrypt on Debian and nginx</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2017-02-09-https-http2-letsencrypt-debian-nginx.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2017-02-09-https-http2-letsencrypt-debian-nginx.html</guid>
+        <pubDate>Thu, 09 Feb 2017 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>January-2017.php</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2017-02-01-january-2017-php.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2017-02-01-january-2017-php.html</guid>
+        <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Exporting from MySQL to CSV file</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2017-01-18-exporting-mysql-csv-file.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2017-01-18-exporting-mysql-csv-file.html</guid>
+        <pubDate>Wed, 18 Jan 2017 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Lazy loading, eager loading and the n+1 problem</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2016-12-30-eager-loading-n1-problem.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2016-12-30-eager-loading-n1-problem.html</guid>
+        <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>HTTP/2 - What and why?</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2016-12-28-http2-what-and-why.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2016-12-28-http2-what-and-why.html</guid>
+        <pubDate>Wed, 28 Dec 2016 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>PHP regular expression functions causing segmentation fault</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2016-10-27-php-regular-expression-functions-causing-segmentation-fault.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2016-10-27-php-regular-expression-functions-causing-segmentation-fault.html</guid>
+        <pubDate>Thu, 27 Oct 2016 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>OOP Cheatsheet</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2016-09-15-oop-cheatsheet.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2016-09-15-oop-cheatsheet.html</guid>
+        <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Validating email senders</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2016-09-02-validating-email-senders.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2016-09-02-validating-email-senders.html</guid>
+        <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Wrapping up Laracon EU 2016</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2016-08-29-wrapping-laracon-eu-2016.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2016-08-29-wrapping-laracon-eu-2016.html</guid>
+        <pubDate>Mon, 29 Aug 2016 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Demagicfying Laravel: Model properties; getters and setters</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2016-08-15-demagicfying-laravel-model-properties-getters-setters.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2016-08-15-demagicfying-laravel-model-properties-getters-setters.html</guid>
+        <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Front Controller design pattern</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2016-03-09-front-controller-design-pattern.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2016-03-09-front-controller-design-pattern.html</guid>
+        <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>PHP 7 has finally arrived</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2015-12-04-php-7-has-finally-arrived.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2015-12-04-php-7-has-finally-arrived.html</guid>
+        <pubDate>Fri, 04 Dec 2015 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>New WordPress plugin: URL Builder for Analytics</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2015-11-22-new-wordpress-plugin-url-builder-for-analytics.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2015-11-22-new-wordpress-plugin-url-builder-for-analytics.html</guid>
+        <pubDate>Sun, 22 Nov 2015 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Levemand - om mad, øl og andre gode ting i livet</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2015-11-21-levemand-om-mad-ol-og-andre-gode-ting-i-livet.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2015-11-21-levemand-om-mad-ol-og-andre-gode-ting-i-livet.html</guid>
+        <pubDate>Sat, 21 Nov 2015 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>PHP 7 - What&#039;s up, and what&#039;s new?</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2015-11-04-php-7-whats-up-and-whats-new.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2015-11-04-php-7-whats-up-and-whats-new.html</guid>
+        <pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Code reviews</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2015-10-27-code-reviews.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2015-10-27-code-reviews.html</guid>
+        <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Composer</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2015-08-24-composer.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2015-08-24-composer.html</guid>
+        <pubDate>Mon, 24 Aug 2015 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>2014 and beyond</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2014-01-22-2014-and-beyond.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2014-01-22-2014-and-beyond.html</guid>
+        <pubDate>Wed, 22 Jan 2014 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>2013, det succesfulde år der gik</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2014-01-21-2013-det-succesfulde-ar-der-gik.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2014-01-21-2013-det-succesfulde-ar-der-gik.html</guid>
+        <pubDate>Tue, 21 Jan 2014 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Opsummering af Aprils 30-dages udfordring</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2013-06-15-opsummering-af-aprils-30-dages-udfordring.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2013-06-15-opsummering-af-aprils-30-dages-udfordring.html</guid>
+        <pubDate>Sat, 15 Jun 2013 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>WordPress-sikkerhed og brute force angreb</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2013-04-15-wordpress-sikkerhed-og-brute-force-angreb.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2013-04-15-wordpress-sikkerhed-og-brute-force-angreb.html</guid>
+        <pubDate>Mon, 15 Apr 2013 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Aprils 30-dages udfordring</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2013-04-03-aprils-30-dages-udfordring.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2013-04-03-aprils-30-dages-udfordring.html</guid>
+        <pubDate>Wed, 03 Apr 2013 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Speciale aka. næste store projekt</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2013-02-22-speciale-aka-naeste-store-projekt.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2013-02-22-speciale-aka-naeste-store-projekt.html</guid>
+        <pubDate>Fri, 22 Feb 2013 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Drupal - opbygning og termer</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2013-02-07-drupal-opbygning-og-termer.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2013-02-07-drupal-opbygning-og-termer.html</guid>
+        <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Januar - Opsummering og next step</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2013-02-04-januar-opsummering-og-next-step.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2013-02-04-januar-opsummering-og-next-step.html</guid>
+        <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Nyt job - PHP og Drupal</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2013-01-25-nyt-job-php-og-drupal.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2013-01-25-nyt-job-php-og-drupal.html</guid>
+        <pubDate>Fri, 25 Jan 2013 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Nordic Game Jam 2013 - Mine tanker</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2013-01-21-nordic-game-jam-2013-mine-tanker.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2013-01-21-nordic-game-jam-2013-mine-tanker.html</guid>
+        <pubDate>Mon, 21 Jan 2013 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>30 day challenges, og min Januarudfordring</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2013-01-02-30-day-challenges-og-min-januarudfordring.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2013-01-02-30-day-challenges-og-min-januarudfordring.html</guid>
+        <pubDate>Wed, 02 Jan 2013 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>2013 - Nyt år, nye mål</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2013-01-01-2013-nyt-ar-nye-mal.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2013-01-01-2013-nyt-ar-nye-mal.html</guid>
+        <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Tillykke med de 100.000, Ubuntudanmark!</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-12-27-tillykke-med-de-100-000-ubuntudanmark.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-12-27-tillykke-med-de-100-000-ubuntudanmark.html</guid>
+        <pubDate>Tue, 27 Dec 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Teknikken bag en Facebook konkurrence</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-11-29-teknikken-bag-en-facebook-konkurrence.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-11-29-teknikken-bag-en-facebook-konkurrence.html</guid>
+        <pubDate>Tue, 29 Nov 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>WordPress Danmark og WordPress på dansk</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-11-20-wordpress-danmark-og-wordpress-pa-dansk.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-11-20-wordpress-danmark-og-wordpress-pa-dansk.html</guid>
+        <pubDate>Sun, 20 Nov 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>WordPress Danmark - Hvad så nu?</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-11-16-wordpress-danmark-hvad-sa-nu.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-11-16-wordpress-danmark-hvad-sa-nu.html</guid>
+        <pubDate>Wed, 16 Nov 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>WordCamp Danmark 2011 - WordPress cases!</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-11-14-wordcamp-danmark-2011-wordpress-cases.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-11-14-wordcamp-danmark-2011-wordpress-cases.html</guid>
+        <pubDate>Mon, 14 Nov 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>WordCamp Danmark 2011 - Dag 2</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-11-13-wordcamp-danmark-2011-dag-2.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-11-13-wordcamp-danmark-2011-dag-2.html</guid>
+        <pubDate>Sun, 13 Nov 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>WordCamp Danmark 2011 - Dag 1</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-11-12-wordcamp-danmark-2011-dag-1.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-11-12-wordcamp-danmark-2011-dag-1.html</guid>
+        <pubDate>Sat, 12 Nov 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Wordcamp Danmark 2011</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-11-10-wordcamp-danmark-2011.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-11-10-wordcamp-danmark-2011.html</guid>
+        <pubDate>Thu, 10 Nov 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Uden mad og øl...</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-08-30-uden-mad-og-ol.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-08-30-uden-mad-og-ol.html</guid>
+        <pubDate>Tue, 30 Aug 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Tillykke med de 20år Linux!</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-08-26-tillykke-med-de-20ar-linux.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-08-26-tillykke-med-de-20ar-linux.html</guid>
+        <pubDate>Fri, 26 Aug 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 9 - Adelaide</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-05-16-dag-9-adelaide.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-05-16-dag-9-adelaide.html</guid>
+        <pubDate>Mon, 16 May 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 8 - Warrnambools vulkan</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-05-16-dag-8-warrnambools-vulkan.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-05-16-dag-8-warrnambools-vulkan.html</guid>
+        <pubDate>Mon, 16 May 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 7 - Warrnambool</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-05-16-dag-7-warrnambool.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-05-16-dag-7-warrnambool.html</guid>
+        <pubDate>Mon, 16 May 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Påskeferien dag 6 - Koalaer og trætoppe</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-04-26-paskeferien-dag-6-koalaer-og-traetoppe.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-04-26-paskeferien-dag-6-koalaer-og-traetoppe.html</guid>
+        <pubDate>Tue, 26 Apr 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Påskeferien dag 5 - Great Ocean Road pt 2 - Apollo Bay</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-04-25-paskeferien-dag-5-great-ocean-road-pt-2-apollo-bay.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-04-25-paskeferien-dag-5-great-ocean-road-pt-2-apollo-bay.html</guid>
+        <pubDate>Mon, 25 Apr 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Påskeferien dag 4 - Nationalparker</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-04-24-paskeferien-dag-4-nationalparker.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-04-24-paskeferien-dag-4-nationalparker.html</guid>
+        <pubDate>Sun, 24 Apr 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Påskeferien dag 3 - Great Ocean Road pt 1 - Lorne</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-04-23-paskeferien-dag-3-great-ocean-road-pt-1-lorne.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-04-23-paskeferien-dag-3-great-ocean-road-pt-1-lorne.html</guid>
+        <pubDate>Sat, 23 Apr 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Påskeferien dag 2 - Melbournes parker</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-04-22-paskeferien-dag-2-melbournes-parker.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-04-22-paskeferien-dag-2-melbournes-parker.html</guid>
+        <pubDate>Fri, 22 Apr 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Påskeferien dag 1 - Melbourne City</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-04-21-paskeferien-dag-1-melbourne-city.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-04-21-paskeferien-dag-1-melbourne-city.html</guid>
+        <pubDate>Thu, 21 Apr 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Påskeferien dag 0 - afrejsen</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-04-20-paskeferien-dag-0-afrejsen.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-04-20-paskeferien-dag-0-afrejsen.html</guid>
+        <pubDate>Wed, 20 Apr 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Netværkssikkerhed - Definitioner og basics</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-03-14-netvaerkssikkerhed-definitioner-og-basics.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-03-14-netvaerkssikkerhed-definitioner-og-basics.html</guid>
+        <pubDate>Mon, 14 Mar 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 13 - A new beginning</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-02-10-dag-13-a-new-beginning.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-02-10-dag-13-a-new-beginning.html</guid>
+        <pubDate>Thu, 10 Feb 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 12 - Boligsøgning</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-02-09-dag-12-boligs-c3-b8gning.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-02-09-dag-12-boligs-c3-b8gning.html</guid>
+        <pubDate>Wed, 09 Feb 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 11 - Hviledag</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-02-08-dag-11-hviledag.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-02-08-dag-11-hviledag.html</guid>
+        <pubDate>Tue, 08 Feb 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 10 - Nyt Hostel</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-02-07-dag-10-nyt-hostel.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-02-07-dag-10-nyt-hostel.html</guid>
+        <pubDate>Mon, 07 Feb 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 9 - Happy Chinese New Year</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-02-06-dag-9-happy-chinese-new-year.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-02-06-dag-9-happy-chinese-new-year.html</guid>
+        <pubDate>Sun, 06 Feb 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 8 - Lord Nelson</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-02-05-dag-8-lord-nelson.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-02-05-dag-8-lord-nelson.html</guid>
+        <pubDate>Sat, 05 Feb 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 7 - Sandheden set fra pubbens vindue</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-02-04-dag-7-sandheden-set-fra-pubbens-vindue.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-02-04-dag-7-sandheden-set-fra-pubbens-vindue.html</guid>
+        <pubDate>Fri, 04 Feb 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 6 - botanisk Have</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-02-03-dag-6-botanisk-have.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-02-03-dag-6-botanisk-have.html</guid>
+        <pubDate>Thu, 03 Feb 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 5 - Operahuset</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-02-02-dag-5-operahuset.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-02-02-dag-5-operahuset.html</guid>
+        <pubDate>Wed, 02 Feb 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 4 - Trivia</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-02-01-dag-4-trivia.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-02-01-dag-4-trivia.html</guid>
+        <pubDate>Tue, 01 Feb 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 3 - Bondi Beach</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-01-31-dag-3-bondi-beach.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-01-31-dag-3-bondi-beach.html</guid>
+        <pubDate>Mon, 31 Jan 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 2 - Hyde Park</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-01-30-dag-2-hyde-park.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-01-30-dag-2-hyde-park.html</guid>
+        <pubDate>Sun, 30 Jan 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 1 - Darling Harbour</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-01-29-dag-1-darling-harbour.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-01-29-dag-1-darling-harbour.html</guid>
+        <pubDate>Sat, 29 Jan 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dag 0 - Afrejsen</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2011-01-28-dag-0-afrejsen.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2011-01-28-dag-0-afrejsen.html</guid>
+        <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Convergence Culture - Når nye medier møder den gamle virkelighed.</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2010-10-18-convergence-culture-nar-nye-medier-m-c3-b8der-den-gamle-virkelighed.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2010-10-18-convergence-culture-nar-nye-medier-m-c3-b8der-den-gamle-virkelighed.html</guid>
+        <pubDate>Mon, 18 Oct 2010 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Boganmeldelse: Trust Agents</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2010-09-28-boganmeldelse-trust-agents.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2010-09-28-boganmeldelse-trust-agents.html</guid>
+        <pubDate>Tue, 28 Sep 2010 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Dagens gåtur over søerne</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2010-01-03-dagens-gatur-over-s-c3-b8erne.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2010-01-03-dagens-gatur-over-s-c3-b8erne.html</guid>
+        <pubDate>Sun, 03 Jan 2010 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Open Source Days 2010 - Call for speakers</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2010-01-02-open-source-days-2010-call-for-speakers.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2010-01-02-open-source-days-2010-call-for-speakers.html</guid>
+        <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Ubuntu-dk podcast afsnit 003</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-12-29-ubuntu-dk-podcast-afsnit-003.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-12-29-ubuntu-dk-podcast-afsnit-003.html</guid>
+        <pubDate>Tue, 29 Dec 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>The Cathedral &amp;amp; the Bazaar - Boganmeldelse</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-12-16-the-cathedral-the-bazaar-boganmeldelse.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-12-16-the-cathedral-the-bazaar-boganmeldelse.html</guid>
+        <pubDate>Wed, 16 Dec 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Ubuntu-dk podcast - OSD afsnit 2</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-12-06-ubuntu-dk-podcast-osd-dag-2.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-12-06-ubuntu-dk-podcast-osd-dag-2.html</guid>
+        <pubDate>Sun, 06 Dec 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Ubuntu Danmarks Historie</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-11-30-ubuntu-danmarks-historie.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-11-30-ubuntu-danmarks-historie.html</guid>
+        <pubDate>Mon, 30 Nov 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Hvor virksomheder fødes</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-11-17-hvor-virksomheder-fodes.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-11-17-hvor-virksomheder-fodes.html</guid>
+        <pubDate>Tue, 17 Nov 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Officielle Ubuntu 9.10 CD&#039;er</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-11-08-officielle-ubuntu-9-10-cder.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-11-08-officielle-ubuntu-9-10-cder.html</guid>
+        <pubDate>Sun, 08 Nov 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Open Source Software Links</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-11-03-open-source-software-links.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-11-03-open-source-software-links.html</guid>
+        <pubDate>Tue, 03 Nov 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Open Source Days Community days 09 - recap og podcast</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-10-26-open-source-days-community-days-09-recap-og-podcast.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-10-26-open-source-days-community-days-09-recap-og-podcast.html</guid>
+        <pubDate>Mon, 26 Oct 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Ubuntu-dk podcast afsnit 2</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-10-20-ubuntu-dk-podcast-afsnit-2.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-10-20-ubuntu-dk-podcast-afsnit-2.html</guid>
+        <pubDate>Tue, 20 Oct 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Open Source Community Days</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-10-18-open-source-community-days.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-10-18-open-source-community-days.html</guid>
+        <pubDate>Sun, 18 Oct 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Koala med Karma til fest</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-10-13-koala-med-karma.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-10-13-koala-med-karma.html</guid>
+        <pubDate>Tue, 13 Oct 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Web Analytics Wednesday testet i København</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-10-07-web-analytics-wednesday-testet-i-kobenhavn.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-10-07-web-analytics-wednesday-testet-i-kobenhavn.html</guid>
+        <pubDate>Wed, 07 Oct 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Web Analytics Wednesday testes i København</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-10-05-web-analytics-wednesday-testes-i-k-c3-b8benhavn.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-10-05-web-analytics-wednesday-testes-i-k-c3-b8benhavn.html</guid>
+        <pubDate>Mon, 05 Oct 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Ubuntu global jam, med hygge i København</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-10-04-ubuntu-global-jam-med-hygge-i-k-c3-b8benhavn.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-10-04-ubuntu-global-jam-med-hygge-i-k-c3-b8benhavn.html</guid>
+        <pubDate>Sun, 04 Oct 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Open Source, med folkeskolen som alpha hannen</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-09-29-open-source-med-folkeskolen-som-alpha-hannen.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-09-29-open-source-med-folkeskolen-som-alpha-hannen.html</guid>
+        <pubDate>Tue, 29 Sep 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Web Analytics Wednesday - København</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-09-24-web-analytics-wednesday-k-c3-b8benhavn.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-09-24-web-analytics-wednesday-k-c3-b8benhavn.html</guid>
+        <pubDate>Thu, 24 Sep 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Ubuntu-dk første podcast</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-09-16-ubuntu-dk-f-c3-b8rste-podcast.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-09-16-ubuntu-dk-f-c3-b8rste-podcast.html</guid>
+        <pubDate>Wed, 16 Sep 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Iværk &amp;amp; vækst 09 - dag 2</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-09-12-ivaerk-vakst-dag-2.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-09-12-ivaerk-vakst-dag-2.html</guid>
+        <pubDate>Sat, 12 Sep 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Iværk og vækst 09 - Dag 1</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-09-11-iv-c3-a6rk-og-v-c3-a6kst-09-dag-1.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-09-11-iv-c3-a6rk-og-v-c3-a6kst-09-dag-1.html</guid>
+        <pubDate>Fri, 11 Sep 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Ubuntu, sikkerhed og licenspenge</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-09-02-ubuntu-sikkerhed-og-licenspenge.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-09-02-ubuntu-sikkerhed-og-licenspenge.html</guid>
+        <pubDate>Wed, 02 Sep 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Flere Ubuntubøger</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-08-31-flere-ubuntub-c3-b8ger.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-08-31-flere-ubuntub-c3-b8ger.html</guid>
+        <pubDate>Mon, 31 Aug 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Flere &quot;nye&quot; bøger</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-08-29-flere-nye-b-c3-b8ger.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-08-29-flere-nye-b-c3-b8ger.html</guid>
+        <pubDate>Sat, 29 Aug 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Database Driven Websites Using PHP &amp;amp; MySQL: Boganmeldelse</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-08-20-database-driven-websites-using-php-mysql-boganmeldelse.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-08-20-database-driven-websites-using-php-mysql-boganmeldelse.html</guid>
+        <pubDate>Thu, 20 Aug 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Ubuntu Developer Week</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-08-17-ubuntu-developer-week.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-08-17-ubuntu-developer-week.html</guid>
+        <pubDate>Mon, 17 Aug 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Så er der gratis bøger</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-08-16-sa-er-der-gratis-b-c3-b8ger.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-08-16-sa-er-der-gratis-b-c3-b8ger.html</guid>
+        <pubDate>Sun, 16 Aug 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Computerbrugere vs. Microsoftskatten</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-08-14-computerbrugere-vs-microsoftskatten.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-08-14-computerbrugere-vs-microsoftskatten.html</guid>
+        <pubDate>Fri, 14 Aug 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Using Drupal - Boganmeldelse</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-08-01-using-drupal-boganmeldelse.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-08-01-using-drupal-boganmeldelse.html</guid>
+        <pubDate>Sat, 01 Aug 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Gratis Ubuntu bøger</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-07-31-gratis-ubuntu-b-c3-b8ger.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-07-31-gratis-ubuntu-b-c3-b8ger.html</guid>
+        <pubDate>Fri, 31 Jul 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Electric Box - The Incredible Machine med strøm</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-07-23-electric-box-the-incredible-machine-med-str-c3-b8m.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-07-23-electric-box-the-incredible-machine-med-str-c3-b8m.html</guid>
+        <pubDate>Thu, 23 Jul 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Ubuntu kurser i Danmark</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-07-20-ubuntu-kurser-i-danmark.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-07-20-ubuntu-kurser-i-danmark.html</guid>
+        <pubDate>Mon, 20 Jul 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Art of Community - Første kapitel</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-07-16-art-of-community-f-c3-b8rste-kapitel.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-07-16-art-of-community-f-c3-b8rste-kapitel.html</guid>
+        <pubDate>Thu, 16 Jul 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Hurra, der er krise!</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-06-15-hurra-der-er-krise.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-06-15-hurra-der-er-krise.html</guid>
+        <pubDate>Mon, 15 Jun 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>IT-Politik og parlamentsvalg</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-05-19-it-politik-og-parlamentsvalg.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-05-19-it-politik-og-parlamentsvalg.html</guid>
+        <pubDate>Tue, 19 May 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Så er der fest igen!</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-04-21-sa-er-der-fest-igen.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-04-21-sa-er-der-fest-igen.html</guid>
+        <pubDate>Tue, 21 Apr 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Thi kendes for ret! Sagen om the Pirate Bay.</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-04-18-thi-kendes-for-ret-sagen-om-the-pirate-bay.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-04-18-thi-kendes-for-ret-sagen-om-the-pirate-bay.html</guid>
+        <pubDate>Sat, 18 Apr 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Så ruller valgbusserne ud!</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-04-16-sa-ruller-valgbusserne-ud.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-04-16-sa-ruller-valgbusserne-ud.html</guid>
+        <pubDate>Thu, 16 Apr 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Boganmeldelse: Relationelle databaser</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-04-04-boganmeldelse-relationelle-databaser.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-04-04-boganmeldelse-relationelle-databaser.html</guid>
+        <pubDate>Sat, 04 Apr 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>TV kanaler benytter bittorrent.</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-03-30-tv-kanaler-benytter-bittorrent.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-03-30-tv-kanaler-benytter-bittorrent.html</guid>
+        <pubDate>Mon, 30 Mar 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Ubuntu 9.04 Jaunty Jackalope udgives</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-03-28-ubuntu-904-jaunty-jackalope-udgives.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-03-28-ubuntu-904-jaunty-jackalope-udgives.html</guid>
+        <pubDate>Sat, 28 Mar 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Retssagen mod the Pirate Bay</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-02-24-retssagen-mod-the-pirate-bay.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-02-24-retssagen-mod-the-pirate-bay.html</guid>
+        <pubDate>Tue, 24 Feb 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Ubuntu/Debian medieserver med Playstation 3 support</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-02-03-ubuntu-debian-mediaserver.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-02-03-ubuntu-debian-mediaserver.html</guid>
+        <pubDate>Tue, 03 Feb 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Screen + Irssi</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-02-02-screen-irssi.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-02-02-screen-irssi.html</guid>
+        <pubDate>Mon, 02 Feb 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>IT og Telestyrelsen går Open Source</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-01-29-it-og-telestyrelsen-gar-open-source.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-01-29-it-og-telestyrelsen-gar-open-source.html</guid>
+        <pubDate>Thu, 29 Jan 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Asus Eee Box som Debian server.</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-01-28-asus-eee-box-som-debian-server.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-01-28-asus-eee-box-som-debian-server.html</guid>
+        <pubDate>Wed, 28 Jan 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>LAMP (Linux, Apache, MySQL &amp;amp; PHP) på dit Ubuntu desktop</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2009-01-12-lamp-linux-apache-mysql-php-pa-dit-ubuntu-desktop.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2009-01-12-lamp-linux-apache-mysql-php-pa-dit-ubuntu-desktop.html</guid>
+        <pubDate>Mon, 12 Jan 2009 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Ny Wordpress Version</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-12-11-nywordpressversion.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-12-11-nywordpressversion.html</guid>
+        <pubDate>Thu, 11 Dec 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Fuld fart på Ubuntudanmark</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-11-25-fuld-fart-pa-ubuntudanmark.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-11-25-fuld-fart-pa-ubuntudanmark.html</guid>
+        <pubDate>Tue, 25 Nov 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Stilhed!</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-11-20-stilhed.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-11-20-stilhed.html</guid>
+        <pubDate>Thu, 20 Nov 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Så er der fest!</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-10-30-sa-er-der-fest.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-10-30-sa-er-der-fest.html</guid>
+        <pubDate>Thu, 30 Oct 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Der er mange penge at spare på software!</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-10-29-der-er-mange-penge-at-spare-pa-software.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-10-29-der-er-mange-penge-at-spare-pa-software.html</guid>
+        <pubDate>Wed, 29 Oct 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Gratis software? Det er der penge i!</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-10-28-gratis-software-det-er-der-penge-i.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-10-28-gratis-software-det-er-der-penge-i.html</guid>
+        <pubDate>Tue, 28 Oct 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Nedtællingen er begyndt!</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-10-13-nedtaellingen-er-begyndt.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-10-13-nedtaellingen-er-begyndt.html</guid>
+        <pubDate>Mon, 13 Oct 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Programhåndtering via linux&#039; terminal</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-10-06-programmer-via-linux-terminalen.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-10-06-programmer-via-linux-terminalen.html</guid>
+        <pubDate>Mon, 06 Oct 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Grundlæggende arbejde med Linux&#039; terminal</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-10-04-grundl-c3-a6ggende-arbejde-med-linux-terminal.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-10-04-grundl-c3-a6ggende-arbejde-med-linux-terminal.html</guid>
+        <pubDate>Sat, 04 Oct 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Mærkbar positiv omtale aka. Gratis software til alle</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-09-30-maerkbar-positiv-omtale.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-09-30-maerkbar-positiv-omtale.html</guid>
+        <pubDate>Tue, 30 Sep 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Spændende Wordpress plugins 2/2</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-09-18-spendende-wordpress-plugins-22.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-09-18-spendende-wordpress-plugins-22.html</guid>
+        <pubDate>Thu, 18 Sep 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Spændende Wordpress plugins 1/2</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-09-10-spendene-wordpress-plugins-12.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-09-10-spendene-wordpress-plugins-12.html</guid>
+        <pubDate>Wed, 10 Sep 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Project Euler - Matematik, programmering og leg.</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-09-04-project-euler.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-09-04-project-euler.html</guid>
+        <pubDate>Thu, 04 Sep 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Open-Source Licenser holder også juridisk</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-08-16-open-source-licenser-holder-ogsa-juridisk.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-08-16-open-source-licenser-holder-ogsa-juridisk.html</guid>
+        <pubDate>Sat, 16 Aug 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>The official Ubuntu Book</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-08-13-the-official-ubuntu-book.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-08-13-the-official-ubuntu-book.html</guid>
+        <pubDate>Wed, 13 Aug 2008 00:00:00 +0000</pubDate>
+    </item>
+        <item>
+        <title>Første post</title>
+        <description><![CDATA[]]></description>
+        <link>https://jesperjarlskov.dk//2008-08-12-f-c3-b8rste-post.html</link>
+        <guid isPermaLink="true">https://jesperjarlskov.dk//2008-08-12-f-c3-b8rste-post.html</guid>
+        <pubDate>Tue, 12 Aug 2008 00:00:00 +0000</pubDate>
+    </item>
+    </channel>
+</rss>
