@@ -144,6 +144,27 @@ class Generator
         $this->renderPosts();
         $this->renderTags();
         $this->renderIndex();
+        $this->renderFeeds();
+    }
+
+    private function renderFeeds(): void
+    {
+        echo "Rendering feeds...\n";
+        $distDir = $this->baseDir . '/dist';
+        
+        $recentPosts = array_slice($this->posts, 0, 10);
+
+        // RSS
+        file_put_contents($distDir . '/rss.xml', $this->twig->render('rss.xml.twig', [
+            'posts' => $recentPosts
+        ]));
+        echo "  - Rendered rss.xml\n";
+
+        // Atom
+        file_put_contents($distDir . '/atom.xml', $this->twig->render('atom.xml.twig', [
+            'posts' => $recentPosts
+        ]));
+        echo "  - Rendered atom.xml\n";
     }
 
     private function renderPages(): void
